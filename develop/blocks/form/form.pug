@@ -1,0 +1,14 @@
+mixin form()
+    +b.FORM.form#form(name='mainForm')
+        +e.heading
+            +heading('Напишите нам')
+        +e.input-row
+            +e.LABEL.label(for='formName') Ваше имя
+            +e.INPUT.input(type='text' name='name' id='formName')
+        +e.input-row
+            +e.LABEL.label(for='formEmail') E-mail
+            +e.INPUT.input(type='text' name='email' id='formEmail')
+        +e.input-row
+            +e.LABEL.label(for='formComment') Сообщение
+            +e.TEXTAREA.textarea(name='comment' id='formComment')
+        +e.BUTTON.submit(type='submit') Отправить

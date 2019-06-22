@@ -1,0 +1,15 @@
+include template/header
+include template/footer
+include ../blocks/**/*
+- var alias = "m"
+doctype html
+html(lang='ru')
+    +doc-header
+    body
+        +top-screen
+        +services
+        +investment
+        +partners
+        +map
+        +footer
+        +doc-footer

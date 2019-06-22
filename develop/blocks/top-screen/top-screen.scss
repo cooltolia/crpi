@@ -1,0 +1,213 @@
+.top-screen {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 120px;
+
+    color: $light-text;
+    font-family: $font;
+
+    background-image: linear-gradient(to bottom, rgba(black, 0.6) 0%, rgba(black, 0.6) 100%),
+        url('../images/top-screen_s.jpeg');
+
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+}
+
+.top-screen__decor {
+    position: absolute;
+    bottom: -120px;
+    width: 100%;
+    left: 0;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 116%;
+        height: 100%;
+        left: -8%;
+        
+        bottom: -60px;
+        border-radius: 100%;
+
+        background-color: #fff;
+    }
+}
+
+.top-screen__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.top-screen__logo {
+    position: relative;
+    width: 60px;
+    height: 50px;
+
+    svg {
+        @include svg-icon;
+
+        fill: #fff;
+    }
+}
+
+.top-screen__lang {
+    display: block;
+    padding-top: 4px;
+    padding: 4px 15px;
+
+    color: $text-color;
+    font-size: 8px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+
+    background-color: #fff;
+    border-radius: 17px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+    transition: background-color 300ms ease, color 300ms ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $light-text;
+        text-decoration: none;
+
+        background-color: $themecolor;
+    }
+}
+
+.top-screen__title {
+    margin: 0 0 10px;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.top-screen__subtitle {
+    margin: 0 0 50px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.top-screen__button {
+    display: flex;
+    width: 185px;
+    height: 36px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.5);
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+
+        .top-screen__button-body {
+            color: $light-text;
+            text-decoration: none;
+
+            background-color: darken($themecolor, 10%);
+        }
+    }
+}
+
+.top-screen__button-body {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $light-text;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.33px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    background-color: $themecolor;
+
+    transition: background-color 300ms ease;
+}
+
+.top-screen__button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    flex: 0 0 auto;
+
+    background-color: darken($themecolor, 10%);
+
+    svg {
+        width: 20px;
+        height: 21px;
+
+        fill: #fff;
+    }
+}
+
+.top-screen__down-link {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom: -124px;
+    transform: translateX(-50%) rotate(-90deg);
+
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.07);
+
+    &:hover,
+    &:active,
+    &:focus {
+        .icon {
+            opacity: 0;
+
+            &.hover {
+                opacity: 1;
+            }
+        };
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        
+        transition: opacity 300ms ease;
+
+        &.hover {
+            opacity: 0;
+        }
+
+        svg {
+            @include svg-icon;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .top-screen {
+        background-image: linear-gradient(to bottom, rgba(black, 0.6) 0%, rgba(black, 0.6) 100%),
+        url('../images/top-screen.jpeg');
+        background-size: 100% 150%, 100% auto;
+    }
+}

@@ -1,0 +1,19 @@
+mixin top-screen()
+    +b.SECTION.top-screen
+        +inner
+            +e.HEADER.header
+                +e.logo
+                    include ../../../app/images/svg/inline-svg/logo.svg
+                +e.A.lang(href='./en') in English
+            +e.H1.title АО «ЦЕНТР РАЗВИТИЯ ПОРТОВОЙ ИНФРАСТРУКТУРЫ»
+            +e.H2.subtitle Инвестиции в транспортную инфраструктуру и оказание  логистических услуг
+            +e.A.button(href='#form') 
+                +e.SPAN.button-body Связаться
+                +e.SPAN.button-icon
+                    +icon('btn-arrow')
+            +e.A.down-link(href='#services' title='К описанию услуг')
+                span.icon
+                    include ../../../app/images/svg/inline-svg/round-arrow.svg
+                span.icon.hover
+                    include ../../../app/images/svg/inline-svg/round-arrow-alt.svg
+            +e.decor

@@ -1,0 +1,60 @@
+.form {
+    width: 100%;
+    padding: 30px 20px;
+
+    color: $text-color;
+    font-family: $font;
+}
+
+.form__heading {
+    margin-bottom: 30px;
+
+    .heading {
+        text-align: center;
+    }
+}
+
+.form__input-row {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.form__label {
+    color: #a6a4a4;
+    font-size: 16px;
+    letter-spacing: 0.11px;
+    line-height: 19px;
+}
+
+.form__input,
+.form__textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+
+    color: #090d1c;
+    font-size: 20px;
+    line-height: 23px;
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(#cdcdcd, 0.7);
+
+    transition: border-color 300ms ease;
+
+    &:focus,
+    &.filled {
+        border-color: #ae3f26;
+    }
+}
+
+.form__textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form__submit {
+    @include btn-theme;
+    width: 100%;
+    padding: 17px 20px;
+}

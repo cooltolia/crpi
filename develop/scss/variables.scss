@@ -1,0 +1,236 @@
+$laptop: '(min-width: 1280px)';
+$tablet: '(min-width: 768px)';
+// $tablet-sm: '(max-width: 767px)';
+
+$base-font-size: 16px;
+$font: 'Roboto', Helvetica, Arial, sans-serif;
+
+$themecolor: #ba3f1d;
+$themecolor-darker: #932f13;
+$text-color: #333;
+$text-color-l: #999999;
+$light-text: #ffffff;
+
+@mixin btn-theme($themecolor: $themecolor) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    color: $light-text;
+    font-family: $font;
+    font-weight: 700;
+    letter-spacing: 0.11px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: $themecolor;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid $themecolor;
+    border-radius: 10px;
+
+    transition: all 300ms ease;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $light-text;
+        // background-color: #972e12;
+        box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.5);
+        background-color: darken($themecolor, 10%);
+        border-color: darken($themecolor, 10%);
+    }
+
+    &:active {
+        text-decoration: none;
+        color: $light-text;
+        background-color: #00A344;
+        border-color:#00A344;
+    }
+}
+
+@mixin btn-transparent($themecolor: $themecolor) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: $themecolor;
+    font-family: $font;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid $themecolor;
+    border-radius: 4px;
+
+    transition: all 300ms ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $themecolor;
+        border-color: rgba($themecolor, 0.5);
+    }
+}
+
+@mixin btn-light {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: $themecolor;
+    font-family: $font;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: $themecolor-light;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid $themecolor-light;
+    border-radius: 4px;
+
+    transition: all 300ms ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $light-text;
+        background-color: $themecolor;
+        border-color: $themecolor;
+    }
+}
+
+@mixin btn-reset {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@mixin heading {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #191919;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 480px) {
+        font-size: 10px;
+    }
+}
+
+@mixin svg-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@mixin img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@mixin section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-family: $opsans;
+    color: $text-color;
+
+    @media #{$desktop} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@mixin transition($prop, $time: 300ms, $type: ease) {
+    transition: $prop $time $type;
+}
+
+@mixin arrow() {
+    width: 7px;
+    height: 7px;
+    border: 2px solid black;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+
+    top: 4px;
+    right: -10px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+@mixin btm-line($pb: 1px) {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+    padding-bottom: $pb;
+    width: max-content;
+
+    &:hover {
+        background-position: 100% 100%;
+        background-size: 0% 1px;
+    }
+
+    @content;
+}

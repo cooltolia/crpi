@@ -1,0 +1,1997 @@
+{
+	"additionalMenu": [
+		{
+			"label": "Доставка",
+			"link": "#"
+		},
+		{
+			"label": "Организаторам СП",
+			"link": "#"
+		},
+		{
+			"label": "Оптовикам",
+			"link": "#"
+		}
+	],
+	"adviceCards": [
+		{
+			"link": "#",
+			"image": "images/advices/advice1.jpg",
+			"category": "Детская обувь",
+			"title": "Как выбрать детскую зимнюю обувь Nordman?",
+			"date": "15 Декабря 2018"
+		},
+		{
+			"link": "#",
+			"image": "images/advices/advice2.jpg",
+			"category": "Охота и рыбалка",
+			"title": "Как правильно хранить болотные сапоги и вейдерсы",
+			"date": "15 Декабря 2018"
+		},
+		{
+			"link": "#",
+			"image": "images/advices/advice3.jpg",
+			"category": "Детская обувь",
+			"title": "Стоит ли покупать ребенку резиновые сапоги поздней осенью?",
+			"date": "09 Октября 2018"
+		}
+	],
+	"cartProducts": [
+		{
+			"image": "images/products/kids/product1.jpg",
+			"name": "Nordman Little One с вшитым вкладышем",
+			"article": "Код товара: 216014-03 / 316014-03",
+			"currentPrice": "2190 ₽",
+			"oldPrice": "2590 ₽",
+			"totalPrice": "4380 ₽",
+			"currentQuantity": 2,
+			"hasDiscount": true
+		},
+		{
+			"productsGroup": {
+				"productsGroupTitle": "На товары действует парная скидка – 15%",
+				"productsGroupTip": "Короткое пояснение, откуда появилась дополнительная скидка",
+				"products": [
+					{
+						"image": "images/products/kids/product3.jpg",
+						"name": "Nordman Little One с вшитым вкладышем",
+						"article": "Код товара: 216014-03 / 316014-03",
+						"currentPrice": "2190 ₽",
+						"oldPrice": "2590 ₽",
+						"totalPrice": "4380 ₽",
+						"currentQuantity": 2,
+						"hasDiscount": true
+					},
+					{
+						"image": "images/products/kids/product4.jpg",
+						"name": "Nordman Little One с вшитым вкладышем",
+						"article": "Код товара: 216014-03 / 316014-03",
+						"currentPrice": "1190 ₽",
+						"oldPrice": "1590 ₽",
+						"totalPrice": "1380 ₽",
+						"currentQuantity": 1,
+						"hasDiscount": true
+					}
+				]
+			}
+		},
+		{
+			"image": "images/products/kids/product2.jpg",
+			"name": "Nordman Little One с вшитым вкладышем",
+			"article": "Код товара: 216014-03 / 316014-03",
+			"totalPrice": "100 ₽",
+			"currentQuantity": 1,
+			"lastItem": true
+		},
+		{
+			"image": "images/products/kids/product5.jpg",
+			"name": "Nordman Little One с вшитым вкладышем",
+			"article": "Код товара: 216014-03 / 316014-03",
+			"currentPrice": "2190 ₽",
+			"totalPrice": "4380 ₽",
+			"currentQuantity": 2,
+			"lowstock": "Осталось 2 шт."
+		}
+	],
+	"catalogList": [
+		{
+			"labels": [
+				{
+					"text": "Товар недели",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/catalog/product1.jpg",
+				"images/catalog/product1-1.jpg"
+			],
+			"thumbnails": [
+				"images/catalog/product1_thumb.jpg",
+				"images/catalog/product1-1_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "Хит",
+					"modifier": "info"
+				}
+			],
+			"images": [
+				"images/catalog/product2.jpg"
+			],
+			"thumbnails": [
+				"images/catalog/product2_thumb.jpg"
+			],
+			"currentPrice": "2590 ₽",
+			"name": "Nordman Beat",
+			"property": "с эластичной вставкой",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "–20%",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/catalog/product3.jpg"
+			],
+			"thumbnails": [
+				"images/catalog/product3_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Drive",
+			"property": "на высокой липучке",
+			"sizes": [
+				"46",
+				"48",
+				"52",
+				"54"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "Новинка",
+					"modifier": "success"
+				}
+			],
+			"images": [
+				"images/catalog/product4.jpg"
+			],
+			"thumbnails": [
+				"images/catalog/product4_thumb.jpg"
+			],
+			"currentPrice": "2590 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "Хит",
+					"modifier": "info"
+				}
+			],
+			"images": [
+				"images/catalog/product1.jpg",
+				"images/catalog/product1-1.jpg"
+			],
+			"thumbnails": [
+				"images/catalog/product1_thumb.jpg",
+				"images/catalog/product1-1_thumb.jpg"
+			],
+			"currentPrice": "2590 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "Новинка",
+					"modifier": "success"
+				}
+			],
+			"images": [
+				"images/catalog/product6.jpg"
+			],
+			"thumbnails": [
+				"images/catalog/product6_thumb.jpg"
+			],
+			"currentPrice": "1590 ₽",
+			"name": "Nordman Avis",
+			"property": "с вшитым мехом",
+			"sizes": [
+				"22/23",
+				"24/25",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		}
+	],
+	"devNav": {
+		"onlineStore": [
+			{
+				"link": "./main.html",
+				"text": "Главная"
+			},
+			{
+				"link": "./catalog-page.html",
+				"text": "Каталог"
+			},
+			{
+				"link": "./product-page.html",
+				"text": "Страница товара"
+			},
+			{
+				"link": "./order-page.html",
+				"text": "Заказ товара"
+			},
+			{
+				"link": "./cart-page.html",
+				"text": "Корзина"
+			},
+			{
+				"link": "./favourites-page.html",
+				"text": "Избранное"
+			},
+			{
+				"link": "./product-feedback-page.html",
+				"text": "Отзыв о товаре"
+			},
+			{
+				"link": "./search-page.html",
+				"text": "Поиск"
+			},
+			{
+				"link": "./where-buy-page.html",
+				"text": "Где купить"
+			},
+			{
+				"link": "./certificates-page.html",
+				"text": "Сертификаты"
+			},
+			{
+				"link": "./advices-page.html",
+				"text": "Советы"
+			},
+			{
+				"link": "./text-page.html",
+				"text": "Страница блога 1"
+			},
+			{
+				"link": "./text-page--banner.html",
+				"text": "Страница блога 2"
+			}
+		],
+		"account": []
+	},
+	"discountProducts": [
+		{
+			"labels": [
+				{
+					"text": "Товар недели",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/discount-products/product1.jpg",
+				"images/discount-products/product1-1.jpg",
+				"images/discount-products/product1.jpg",
+				"images/discount-products/product1-1.jpg",
+				"images/discount-products/product1.jpg",
+				"images/discount-products/product1-1.jpg",
+				"images/discount-products/product1.jpg",
+				"images/discount-products/product1-1.jpg",
+				"images/discount-products/product1.jpg",
+				"images/discount-products/product1-1.jpg"
+			],
+			"thumbnails": [
+				"images/discount-products/product1_thumb.jpg",
+				"images/discount-products/product1-1_thumb.jpg",
+				"images/discount-products/product1_thumb.jpg",
+				"images/discount-products/product1-1_thumb.jpg",
+				"images/discount-products/product1_thumb.jpg",
+				"images/discount-products/product1-1_thumb.jpg",
+				"images/discount-products/product1_thumb.jpg",
+				"images/discount-products/product1-1_thumb.jpg",
+				"images/discount-products/product1_thumb.jpg",
+				"images/discount-products/product1-1_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			],
+			"modifier": "accent"
+		},
+		{
+			"labels": [
+				{
+					"text": "–10%",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/discount-products/product2.jpg"
+			],
+			"thumbnails": [
+				"images/discount-products/product2_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2290 ₽",
+			"name": "Nordman Beat",
+			"property": "с эластичной вставкой",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "–20%",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/discount-products/product3.jpg"
+			],
+			"thumbnails": [
+				"images/discount-products/product3_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Drive",
+			"property": "на высокой липучке",
+			"sizes": [
+				"46",
+				"48",
+				"52",
+				"54"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "–20%",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/discount-products/product4.jpg"
+			],
+			"thumbnails": [
+				"images/discount-products/product4_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		},
+		{
+			"labels": [
+				{
+					"text": "Товар недели",
+					"modifier": "accent"
+				}
+			],
+			"images": [
+				"images/discount-products/product1.jpg",
+				"images/discount-products/product1-1.jpg"
+			],
+			"thumbnails": [
+				"images/discount-products/product1_thumb.jpg",
+				"images/discount-products/product1-1_thumb.jpg"
+			],
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"sizes": [
+				"20/21",
+				"22/23",
+				"24/25",
+				"26/27",
+				"28/29",
+				"30/31",
+				"32/33",
+				"34/35"
+			]
+		}
+	],
+	"footerNav": [
+		{
+			"label": "Каталог",
+			"link": "#",
+			"menu": [
+				{
+					"label": "Мужчинам",
+					"link": "#"
+				},
+				{
+					"label": "Женщинам",
+					"link": "#"
+				},
+				{
+					"label": "Детям",
+					"link": "#"
+				},
+				{
+					"label": "Охота и рыбалка",
+					"link": "#"
+				},
+				{
+					"label": "Новинки",
+					"link": "#"
+				},
+				{
+					"label": "Распродажа",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"label": "Компания",
+			"menu": [
+				{
+					"label": "О нас",
+					"link": "#"
+				},
+				{
+					"label": "Контакты",
+					"link": "#"
+				},
+				{
+					"label": "Сертификаты",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"label": "Покупателям",
+			"menu": [
+				{
+					"label": "Оплата",
+					"link": "#"
+				},
+				{
+					"label": "Доставка",
+					"link": "#"
+				},
+				{
+					"label": "Гарантии",
+					"link": "#"
+				},
+				{
+					"label": "Где купить",
+					"link": "#"
+				},
+				{
+					"label": "Советы по выбору",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"label": "Оптовикам",
+			"link": "#"
+		},
+		{
+			"label": "Организаторам СП",
+			"link": "#"
+		}
+	],
+	"indexCategories": [
+		{
+			"heading": "Детям",
+			"banner": {
+				"bg": "images/products/kids/banner.jpg"
+			},
+			"menu": [
+				{
+					"link": "#",
+					"text": "Зимняя обувь"
+				},
+				{
+					"link": "#",
+					"text": "Демисезонная обувь"
+				},
+				{
+					"link": "#",
+					"text": "Летняя обувь"
+				},
+				{
+					"link": "#",
+					"text": "Одежда и аксессуары"
+				}
+			],
+			"button": {
+				"link": "#",
+				"text": "Все товары для детей"
+			},
+			"slider": [
+				{
+					"labels": [
+						{
+							"text": "Новинка",
+							"modifier": "success"
+						}
+					],
+					"image": "images/products/kids/product1.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Joy",
+					"property": "с мехом на липучке",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "Хит",
+							"modifier": "info"
+						}
+					],
+					"image": "images/products/kids/product2.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Joy",
+					"property": "на высокой липучке",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "Хит",
+							"modifier": "info"
+						}
+					],
+					"image": "images/products/kids/product3.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Avis",
+					"property": "с вшитым мехом",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "Новинка",
+							"modifier": "success"
+						}
+					],
+					"image": "images/products/kids/product1.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Joy",
+					"property": "с мехом на липучке",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "–20%",
+							"modifier": "accent"
+						}
+					],
+					"image": "images/products/kids/product2.jpg",
+					"oldPrice": "1090 ₽",
+					"newPrice": "1290 ₽ ₽",
+					"name": "Nordman Joy",
+					"property": "с мехом на липучке",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"heading": "Женщинам",
+			"banner": {
+				"bg": "images/products/female/banner.jpg"
+			},
+			"menu": [
+				{
+					"link": "#",
+					"text": "Зимняя обувь"
+				},
+				{
+					"link": "#",
+					"text": "Резиновая обувь"
+				},
+				{
+					"link": "#",
+					"text": "Одежда и аксессуары"
+				}
+			],
+			"button": {
+				"link": "#",
+				"text": "Все товары для женщин"
+			},
+			"slider": [
+				{
+					"labels": [
+						{
+							"text": "Новинка",
+							"modifier": "success"
+						}
+					],
+					"image": "images/products/female/product1.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Frosto",
+					"property": "с мехом на липучке",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "Хит",
+							"modifier": "info"
+						}
+					],
+					"image": "images/products/female/product2.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Frosto",
+					"property": "на высокой липучке",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "Хит",
+							"modifier": "info"
+						}
+					],
+					"image": "images/products/female/product3.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Bellina",
+					"property": "с вшитым мехом",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "Новинка",
+							"modifier": "success"
+						}
+					],
+					"image": "images/products/female/product1.jpg",
+					"currentPrice": "1290 ₽",
+					"name": "Nordman Joy",
+					"property": "с мехом на липучке",
+					"link": "#"
+				},
+				{
+					"labels": [
+						{
+							"text": "–20%",
+							"modifier": "accent"
+						}
+					],
+					"image": "images/products/female/product2.jpg",
+					"oldPrice": "1090 ₽",
+					"newPrice": "1290 ₽ ₽",
+					"name": "Nordman Joy",
+					"property": "с мехом на липучке",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"heading": "Мужчинам",
+			"banner": {
+				"bg": "images/products/male/banner.jpg"
+			},
+			"menu": [
+				{
+					"link": "#",
+					"text": "Зимняя обувь"
+				},
+				{
+					"link": "#",
+					"text": "Резиновая обувь"
+				},
+				{
+					"link": "#",
+					"text": "Одежда и аксессуары"
+				}
+			],
+			"button": {
+				"link": "#",
+				"text": "Все товары для мужчин"
+			}
+		},
+		{
+			"heading": "Рыбалка и охота",
+			"banner": {
+				"bg": "images/products/fishing/banner.jpg"
+			},
+			"menu": [
+				{
+					"link": "#",
+					"text": "Одежда"
+				},
+				{
+					"link": "#",
+					"text": "Обувь"
+				},
+				{
+					"link": "#",
+					"text": "Аксессуары"
+				}
+			],
+			"button": {
+				"link": "#",
+				"text": "Все для рыбалки и охоты"
+			}
+		}
+	],
+	"mainNav": [
+		{
+			"label": "Мужчинам",
+			"link": "#",
+			"innerMenu": [
+				{
+					"label": "Зимняя обувь",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Ботинки ЭВА",
+							"link": "#"
+						},
+						{
+							"label": "Сапоги ЭВА",
+							"link": "#"
+						},
+						{
+							"label": "Комбинированные сапоги",
+							"link": "#"
+						},
+						{
+							"label": "Вкладыши для сапог",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"label": "Резиновая обувь",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Ботинки резиновые",
+							"link": "#"
+						},
+						{
+							"label": "Сапоги резиновые",
+							"link": "#"
+						},
+						{
+							"label": "Вкладыши для сапог",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"label": "Одежда и аксессуары",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Полукомбинезоны",
+							"link": "#"
+						},
+						{
+							"label": "Костюмы",
+							"link": "#"
+						},
+						{
+							"label": "Куртки и плащи",
+							"link": "#"
+						},
+						{
+							"label": "Костюмы",
+							"link": "#"
+						},
+						{
+							"label": "Термобелье",
+							"link": "#"
+						},
+						{
+							"label": "Тельняшки и футболки",
+							"link": "#"
+						},
+						{
+							"label": "Головные уборы",
+							"link": "#"
+						},
+						{
+							"label": "Перчатки и руковицы",
+							"link": "#"
+						},
+						{
+							"label": "Термоноски",
+							"link": "#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Женщинам",
+			"link": "#",
+			"innerMenu": [
+				{
+					"label": "Зимняя обувь",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Ботинки ЭВА",
+							"link": "#"
+						},
+						{
+							"label": "Сапоги ЭВА",
+							"link": "#"
+						},
+						{
+							"label": "Комбинированные сапоги",
+							"link": "#"
+						},
+						{
+							"label": "Вкладыши для сапог",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"label": "Резиновая обувь",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Ботинки резиновые",
+							"link": "#"
+						},
+						{
+							"label": "Сапоги резиновые",
+							"link": "#"
+						},
+						{
+							"label": "Вкладыши для сапог",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"label": "Одежда и аксессуары",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Полукомбинезоны",
+							"link": "#"
+						},
+						{
+							"label": "Костюмы",
+							"link": "#"
+						},
+						{
+							"label": "Куртки и плащи",
+							"link": "#"
+						},
+						{
+							"label": "Костюмы",
+							"link": "#"
+						},
+						{
+							"label": "Термобелье",
+							"link": "#"
+						},
+						{
+							"label": "Тельняшки и футболки",
+							"link": "#"
+						},
+						{
+							"label": "Головные уборы",
+							"link": "#"
+						},
+						{
+							"label": "Перчатки и руковицы",
+							"link": "#"
+						},
+						{
+							"label": "Термоноски",
+							"link": "#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Детям",
+			"link": "#",
+			"innerMenu": [
+				{
+					"label": "Зимняя обувь",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Ботинки ЭВА",
+							"link": "#"
+						},
+						{
+							"label": "Сапоги ЭВА",
+							"link": "#"
+						},
+						{
+							"label": "Комбинированные сапоги",
+							"link": "#"
+						},
+						{
+							"label": "Вкладыши для сапог",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"label": "Резиновая обувь",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Ботинки резиновые",
+							"link": "#"
+						},
+						{
+							"label": "Сапоги резиновые",
+							"link": "#"
+						},
+						{
+							"label": "Вкладыши для сапог",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"label": "Одежда и аксессуары",
+					"link": "#",
+					"innerMenu": [
+						{
+							"label": "Полукомбинезоны",
+							"link": "#"
+						},
+						{
+							"label": "Костюмы",
+							"link": "#"
+						},
+						{
+							"label": "Куртки и плащи",
+							"link": "#"
+						},
+						{
+							"label": "Костюмы",
+							"link": "#"
+						},
+						{
+							"label": "Термобелье",
+							"link": "#"
+						},
+						{
+							"label": "Тельняшки и футболки",
+							"link": "#"
+						},
+						{
+							"label": "Головные уборы",
+							"link": "#"
+						},
+						{
+							"label": "Перчатки и руковицы",
+							"link": "#"
+						},
+						{
+							"label": "Термоноски",
+							"link": "#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Охота и рыбалка",
+			"link": "#"
+		},
+		{
+			"label": "Новинки",
+			"link": "#"
+		},
+		{
+			"label": "Скидки",
+			"link": "#",
+			"modifier": "highlight"
+		}
+	],
+	"sideMenu": [
+		{
+			"label": "Каталог",
+			"link": "/catalog",
+			"innerMenu": [
+				{
+					"label": "Женские сумки",
+					"link": "/catalog/",
+					"innerMenu": [
+						{
+							"label": "Клатчи",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Ручные сумки",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Рюкзаки",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Сумки через плечо",
+							"link": "/catalog/"
+						}
+					]
+				},
+				{
+					"label": "Мужские сумки",
+					"link": "/catalog/",
+					"innerMenu": [
+						{
+							"label": "Ручные сумки",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Рюкзаки",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Сумки через плечо",
+							"link": "/catalog/"
+						}
+					]
+				},
+				{
+					"label": "Аксессуары",
+					"link": "/catalog/",
+					"innerMenu": [
+						{
+							"label": "Ремни",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Браслеты",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Кошельки",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Футляры",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Блокноты",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Ключницы",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Косметички",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Для Гаджетов",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Для Документов",
+							"link": "/catalog/"
+						}
+					]
+				},
+				{
+					"label": "Рюкзаки",
+					"link": "/catalog/",
+					"innerMenu": [
+						{
+							"label": "Женские рюкзаки",
+							"link": "/catalog/"
+						},
+						{
+							"label": "Мужские рюкзаки",
+							"link": "/catalog/"
+						}
+					]
+				},
+				{
+					"label": "Женская обувь",
+					"link": "/catalog/",
+					"innerMenu": [
+						{
+							"label": "Коллекция Весна-Лето",
+							"link": "/catalog/"
+						}
+					]
+				},
+				{
+					"label": "косметика для ухода",
+					"link": "/catalog/"
+				},
+				{
+					"label": "Подарочная карта",
+					"link": "/catalog/"
+				}
+			]
+		},
+		{
+			"label": "О нас",
+			"link": "/about"
+		},
+		{
+			"label": "Условия",
+			"link": "/terms",
+			"modifier": "small",
+			"innerMenu": [
+				{
+					"label": "Гарантии",
+					"link": "/terms"
+				},
+				{
+					"label": "Оплата",
+					"link": "/terms"
+				},
+				{
+					"label": "Доставка",
+					"link": "/terms"
+				},
+				{
+					"label": "Владельцам карт",
+					"link": "/terms"
+				},
+				{
+					"label": "Корпоративным клиентам",
+					"link": "/terms"
+				},
+				{
+					"label": "Дополнительные услуги",
+					"link": "/terms"
+				}
+			]
+		},
+		{
+			"label": "Контакты",
+			"link": "/contacts"
+		},
+		{
+			"label": "Eng",
+			"link": "/en"
+		}
+	],
+	"productContent": {
+		"images": [
+			"images/product-page/product1.jpg",
+			"images/product-page/product2.jpg",
+			"images/product-page/product3.jpg",
+			"images/product-page/product1.jpg",
+			"images/product-page/product2.jpg",
+			"images/product-page/product3.jpg",
+			"images/product-page/product1.jpg",
+			"images/product-page/product2.jpg",
+			"images/product-page/product3.jpg",
+			"images/product-page/product1.jpg",
+			"images/product-page/product2.jpg",
+			"images/product-page/product3.jpg"
+		],
+		"thumbnails": [
+			"images/product-page/product1_thumb.jpg",
+			"images/product-page/product2_thumb.jpg",
+			"images/product-page/product3_thumb.jpg",
+			"images/product-page/product1_thumb.jpg",
+			"images/product-page/product2_thumb.jpg",
+			"images/product-page/product3_thumb.jpg",
+			"images/product-page/product1_thumb.jpg",
+			"images/product-page/product2_thumb.jpg",
+			"images/product-page/product3_thumb.jpg",
+			"images/product-page/product1_thumb.jpg",
+			"images/product-page/product2_thumb.jpg",
+			"images/product-page/product3_thumb.jpg"
+		],
+		"colors": [
+			{
+				"src": "images/product-page/colors/color1.jpg",
+				"current": true
+			},
+			{
+				"src": "images/product-page/colors/color2.jpg",
+				"sale": true
+			},
+			{
+				"src": "images/product-page/colors/color3.jpg"
+			},
+			{
+				"src": "images/product-page/colors/color4.jpg"
+			},
+			{
+				"src": "images/product-page/colors/color5.jpg"
+			},
+			{
+				"src": "images/product-page/colors/color6.jpg",
+				"sale": true
+			},
+			{
+				"src": "images/product-page/colors/color7.jpg"
+			},
+			{
+				"src": "images/product-page/colors/color8.jpg"
+			}
+		],
+		"sizes": [
+			{
+				"size": 27,
+				"stock": true
+			},
+			{
+				"size": 28,
+				"stock": false
+			},
+			{
+				"size": 29,
+				"stock": true
+			},
+			{
+				"size": 30,
+				"stock": true
+			},
+			{
+				"size": 31,
+				"stock": false
+			},
+			{
+				"size": 32,
+				"stock": true
+			},
+			{
+				"size": 33,
+				"stock": true,
+				"current": true
+			},
+			{
+				"size": 34,
+				"stock": false
+			},
+			{
+				"size": 35,
+				"stock": true
+			},
+			{
+				"size": 36,
+				"stock": true
+			}
+		]
+	},
+	"productRecommendations": [
+		{
+			"image": "images/discount-products/product1.jpg",
+			"currentPrice": "1290 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"link": "#"
+		},
+		{
+			"image": "images/discount-products/product2.jpg",
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Cross",
+			"property": "с флисом",
+			"link": "#"
+		},
+		{
+			"image": "images/discount-products/product3.jpg",
+			"currentPrice": "1290 ₽",
+			"name": "Nordman Quadro",
+			"property": "без шипов до –70ºС",
+			"link": "#"
+		}
+	],
+	"productTestimonials": [
+		{
+			"label": "😻 Рекомендую товар",
+			"plus": [
+				"Все хорошо"
+			],
+			"minus": [
+				"Нет минусов"
+			],
+			"comment": [
+				"Детские сноубутсы Nordman Junior  для активных прогулок зимой. Защищают ноги от холода и влаги. Низ - полностью водонепронциаемый морозоустойчивый материал. Верх - плотная ткань с водоотталкивающей пропиткой.",
+				"Внутри съемный меховой вкладыш с дополнительным слоем фольги. Фольга отражает холод наружу и сохраняет тепло."
+			],
+			"images": [
+				{
+					"small": "images/testimonials/testimonial1.jpg",
+					"big": "images/testimonials/testimonial1_big.jpg"
+				},
+				{
+					"small": "images/testimonials/testimonial2.jpg",
+					"big": "images/testimonials/testimonial2_big.jpg"
+				},
+				{
+					"small": "images/testimonials/testimonial3.jpg",
+					"big": "images/testimonials/testimonial3_big.jpg"
+				}
+			],
+			"author": "Елена Большаяголова",
+			"date": "15 марта 2018"
+		},
+		{
+			"label": "👍 Рекомендую товар",
+			"plus": [
+				"Легко одеваются и снимаются"
+			],
+			"comment": [
+				"На слякотную погоду. Внутренний носочек надо часто вытаскивать, просушивать, иначе ноги замерзнет, так как влага внутри остается."
+			],
+			"images": [
+				{
+					"small": "images/testimonials/testimonial4.jpg",
+					"big": "images/testimonials/testimonial4_big.jpg",
+					"video": true
+				},
+				{
+					"small": "images/testimonials/testimonial5.jpg",
+					"big": "images/testimonials/testimonial5_big.jpg"
+				}
+			],
+			"author": "Екатерина Борщ",
+			"date": "17 мая 2019"
+		}
+	],
+	"mansProductSlider": {
+		"heading": "Для мужчин",
+		"slides": [
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product1.jpg",
+				"currentPrice": "690 ₽",
+				"name": "Сапоги резиновые ПС 14 УТМ",
+				"property": "с вкладышем и манжетом",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product2.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Сапоги резиновые ПС 15",
+				"property": "с двухслойной подошвой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "-20%",
+						"modifier": "accent"
+					}
+				],
+				"image": "images/products/male/product3.jpg",
+				"oldPrice": "1590 ₽",
+				"newPrice": "1290 ₽",
+				"name": "Nordman Beat",
+				"property": "с эластичной вставкой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Новинка",
+						"modifier": "success"
+					}
+				],
+				"image": "images/products/male/product4.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Rover",
+				"property": "с утепляющим вкладышем",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product5.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Drive",
+				"property": "влагозащитная",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product6.jpg",
+				"currentPrice": "3990 ₽",
+				"name": "Nordman Saiga",
+				"property": "полофлисовый",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product1.jpg",
+				"currentPrice": "690 ₽",
+				"name": "Сапоги резиновые ПС 14 УТМ",
+				"property": "с вкладышем и манжетом",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product2.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Сапоги резиновые ПС 15",
+				"property": "с двухслойной подошвой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "-20%",
+						"modifier": "accent"
+					}
+				],
+				"image": "images/products/male/product3.jpg",
+				"oldPrice": "1590 ₽",
+				"newPrice": "1290 ₽",
+				"name": "Nordman Beat",
+				"property": "с эластичной вставкой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Новинка",
+						"modifier": "success"
+					}
+				],
+				"image": "images/products/male/product4.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Rover",
+				"property": "с утепляющим вкладышем",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product5.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Drive",
+				"property": "влагозащитная",
+				"link": "#"
+			}
+		]
+	},
+	"similarProductSlider": {
+		"heading": "Похожие товары",
+		"slides": [
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product1.jpg",
+				"currentPrice": "690 ₽",
+				"name": "Сапоги резиновые ПС 14 УТМ",
+				"property": "с вкладышем и манжетом",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product2.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Сапоги резиновые ПС 15",
+				"property": "с двухслойной подошвой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "-20%",
+						"modifier": "accent"
+					}
+				],
+				"image": "images/products/male/product3.jpg",
+				"oldPrice": "1590 ₽",
+				"newPrice": "1290 ₽",
+				"name": "Nordman Beat",
+				"property": "с эластичной вставкой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Новинка",
+						"modifier": "success"
+					}
+				],
+				"image": "images/products/male/product4.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Rover",
+				"property": "с утепляющим вкладышем",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product5.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Drive",
+				"property": "влагозащитная",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product6.jpg",
+				"currentPrice": "3990 ₽",
+				"name": "Nordman Saiga",
+				"property": "полофлисовый",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product1.jpg",
+				"currentPrice": "690 ₽",
+				"name": "Сапоги резиновые ПС 14 УТМ",
+				"property": "с вкладышем и манжетом",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product2.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Сапоги резиновые ПС 15",
+				"property": "с двухслойной подошвой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "-20%",
+						"modifier": "accent"
+					}
+				],
+				"image": "images/products/male/product3.jpg",
+				"oldPrice": "1590 ₽",
+				"newPrice": "1290 ₽",
+				"name": "Nordman Beat",
+				"property": "с эластичной вставкой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Новинка",
+						"modifier": "success"
+					}
+				],
+				"image": "images/products/male/product4.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Rover",
+				"property": "с утепляющим вкладышем",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product5.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Drive",
+				"property": "влагозащитная",
+				"link": "#"
+			}
+		]
+	},
+	"previousProductSlider": {
+		"heading": "Недавно просмотренные",
+		"slides": [
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product1.jpg",
+				"currentPrice": "690 ₽",
+				"name": "Сапоги резиновые ПС 14 УТМ",
+				"property": "с вкладышем и манжетом",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Хит",
+						"modifier": "info"
+					}
+				],
+				"image": "images/products/male/product2.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Сапоги резиновые ПС 15",
+				"property": "с двухслойной подошвой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "-20%",
+						"modifier": "accent"
+					}
+				],
+				"image": "images/products/male/product3.jpg",
+				"oldPrice": "1590 ₽",
+				"newPrice": "1290 ₽",
+				"name": "Nordman Beat",
+				"property": "с эластичной вставкой",
+				"link": "#"
+			},
+			{
+				"labels": [
+					{
+						"text": "Новинка",
+						"modifier": "success"
+					}
+				],
+				"image": "images/products/male/product4.jpg",
+				"currentPrice": "1290 ₽",
+				"name": "Nordman Rover",
+				"property": "с утепляющим вкладышем",
+				"link": "#"
+			}
+		]
+	},
+	"productTestingPromo": {
+		"video": {
+			"href": "video/promo1.mp4",
+			"poster": "images/videos/video1_poster.jpg"
+		},
+		"title": "Я тестурию Nordman kids",
+		"text": "Краткий текст, пара предложений, пара строчек в чем суть, зачем и почему это интересно.",
+		"link": {
+			"href": "#",
+			"text": "Участвовать в тестировании"
+		}
+	},
+	"nordmanWorldPromo": {
+		"video": {
+			"href": "video/promo2.mp4",
+			"poster": "images/videos/video2_poster.jpg"
+		},
+		"title": "Мир Nordman",
+		"text": "Мы создаем комфортную обувь и одежду для самых некомфортных условий",
+		"link": {
+			"href": "#",
+			"text": "Наши принципы и подход к работе"
+		}
+	},
+	"nordmanStores": [
+		{
+			"id": 0,
+			"name": "Сплав",
+			"address": "Санкт-Петербург, Лесной пр-т, 69",
+			"station": {
+				"color": "red",
+				"label": "Лесная"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"id": 1,
+			"name": "Детский дисконт-центр «Бэбиком»",
+			"address": "Санкт-Петербург, ул. Коллонтай, 41",
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"id": 2,
+			"name": "ООО «Погода»",
+			"address": "Санкт-Петербург, ул. Лиговский пр-т, 255",
+			"station": {
+				"color": "purple",
+				"label": "Обводный канал"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"name": "ТД «Детский скороход»",
+			"address": "Санк-Петербург, Комендантская пл., 8А",
+			"station": {
+				"color": "red",
+				"label": "Лесная"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"name": "Сплав",
+			"address": "Санкт-Петербург, Лесной пр-т, 69",
+			"station": {
+				"color": "blue",
+				"label": "Купчино"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"name": "Детский дисконт-центр «Бэбиком»",
+			"address": "Санкт-Петербург, ул. Коллонтай, 41",
+			"station": {
+				"color": "orange",
+				"label": "Новочеркасская"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"name": "ООО «Погода»",
+			"address": "Санкт-Петербург, ул. Лиговский пр-т, 255",
+			"station": {
+				"color": "green",
+				"label": "Василеостровская"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"name": "Сплав",
+			"address": "Санкт-Петербург, Лесной пр-т, 69",
+			"station": {
+				"color": "red",
+				"label": "Лесная"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		},
+		{
+			"id": 3,
+			"name": "ТД «Детский скороход»",
+			"address": "Санк-Петербург, Комендантская пл., 8А",
+			"station": {
+				"color": "red",
+				"label": "Лесная"
+			},
+			"worktime": [
+				"Пн—Пт 10:00…20:00",
+				"Сб—Вс 10:00…16:00"
+			],
+			"phones": [
+				"+7 921 907-02-57"
+			],
+			"categories": [
+				"Детское",
+				"Мужское и женское"
+			]
+		}
+	],
+	"txtContOffers": [
+		{
+			"image": "images/discount-products/product1.jpg",
+			"currentPrice": "1290 ₽",
+			"name": "Nordman Joy",
+			"property": "на высокой липучке",
+			"link": "#"
+		},
+		{
+			"image": "images/discount-products/product2.jpg",
+			"oldPrice": "2590 ₽",
+			"newPrice": "2190 ₽",
+			"name": "Nordman Cross",
+			"property": "с флисом",
+			"link": "#"
+		},
+		{
+			"image": "images/discount-products/product3.jpg",
+			"currentPrice": "1290 ₽",
+			"name": "Nordman Quadro",
+			"property": "без шипов до –70ºС",
+			"link": "#"
+		}
+	]
+}

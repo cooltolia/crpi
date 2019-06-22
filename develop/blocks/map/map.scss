@@ -1,0 +1,43 @@
+.map {
+    color: $text-color;
+    font-family: $font;
+}
+
+.map__container {
+    width: 100%;
+    height: 325px;
+    max-width: 480px;
+    margin: 0 auto;
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    #customPlacemark {
+        width: 44px;
+        height: 60px;
+
+        background-image: url('../images/map_marker.svg');
+        background-size: cover;
+        transform: translate(-50%, -50%);
+        transform-origin: center;
+
+        transition: transform 300ms ease;
+
+        &.custom-placemark-hover {
+            transform: scale(1.2) translate(-40%, -50%);
+        }
+    }
+}
+
+.map__form {
+    position: relative;
+    z-index: 1;
+    margin: -20px auto 0;
+    width: 280px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 14px 50px 0 rgba(0, 0, 0, 0.12);
+}

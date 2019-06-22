@@ -1,0 +1,38 @@
+.partners {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    color: $text-color;
+    font-family: $font;
+}
+
+.partners__heading {
+    margin-bottom: 30px;
+
+    .heading {
+        text-align: center;
+    }
+}
+
+.partners__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 -5px;
+    padding: 0;
+    list-style: none;
+}
+
+.partners__item {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 10px;
+    width: 135px;
+    height: 75px;
+
+    img {
+        @include img;
+    }
+}
