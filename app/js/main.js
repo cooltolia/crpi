@@ -50,43 +50,35 @@ jQuery(document).ready(function($) {
                 var isValidEmail = Inputmask.isValid(emailInput.val(), { alias: 'email' });
                 var isValidName = nameInput.val().length >= 3 ? true : false;
                 var isValidComment = commentInput.val().length >= 3 ? true : false;
+                var antispam = $('input.agreeCheckbox');
         
                 /** show errors if input value is incorrect */
                 if (!isValidEmail) emailInput.next().show();
                 if (!isValidName) nameInput.next().show();
                 if (!isValidComment) commentInput.next().show();
         
+                if (antispam.prop('checked') == true) {
+                    console.log('spamer ;(');
+                    return;
+                }
+        
                 if (isValidEmail && isValidName && isValidComment) {
                     errors.hide();
-                    // var formData = form.serialize();
+                    var body =
+                        'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();
         
                     Email.send({
-                        SecureToken: 'bd2db3be-05cd-4518-81a3-4bc9d28d7b8b',
+                        SecureToken: 'f59d2754-0d65-4c78-93e4-d260c4fc8d70',
                         To: 'cooltolia@gmail.com',
-                        From: 'cooltolia@mail.ru',
-                        Subject: 'nameInput',
-                        Body: 'commentInput'
-                    }).then(message => alert(message));
-        
-                    // $.ajax({
-                    //     url: '/',
-                    //     type: 'POST',
-                    //     data: formData,
-                    //     contentType: 'multipart/form-data',
-                    //     success: function(data) {
-                    //         success.fadeIn(300).addClass('active');
-                    //         emailInput.val('');
-                    //         nameInput.val('');
-                    //         commentInput.val('');
-                    //     },
-                    //     error: function(data) {
-                    //         // alert(JSON.stringify(data));
-                    //         success.fadeIn(300).addClass('active');
-                    //         emailInput.val('');
-                    //         nameInput.val('');
-                    //         commentInput.val('');
-                    //     }
-                    // });
+                        From: 'cooltolia@gmail.com',
+                        Subject: 'Заявка с сайта ЦРПИ',
+                        Body: body
+                    }).then(function() {
+                        success.fadeIn(300).addClass('active');
+                        emailInput.val('');
+                        nameInput.val('');
+                        commentInput.val('');
+                    });
                 }
             });
         

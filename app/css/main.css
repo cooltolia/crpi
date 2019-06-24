@@ -495,7 +495,10 @@ th {
   width: 100%;
   padding: 30px 20px;
   color: #333;
-  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  /* custom antispam */ }
+  .form .agreeCheckbox {
+    display: none; }
 
 .form__heading {
   margin-bottom: 30px; }

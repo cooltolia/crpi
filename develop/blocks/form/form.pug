@@ -14,6 +14,7 @@ mixin form()
             +e.LABEL.label(for='formComment') Сообщение
             +e.TEXTAREA.textarea(name='comment' id='formComment' required)
             +e.SPAN.error
+        input.agreeCheckbox(type="checkbox" name='agree')
         +e.BUTTON.submit(type='submit') Отправить
         +e.success
             +e.success-title Сообщение отправлено

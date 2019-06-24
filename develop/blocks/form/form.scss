@@ -5,6 +5,11 @@
 
     color: $text-color;
     font-family: $font;
+
+    /* custom antispam */
+    .agreeCheckbox {
+        display: none;
+    }
 }
 
 .form__heading {
