@@ -1,4 +1,44 @@
 (function() {
+    var Email = {
+        send: function(a) {
+            return new Promise(function(n, e) {
+                (a.nocache = Math.floor(1e6 * Math.random() + 1)), (a.Action = 'Send');
+                var t = JSON.stringify(a);
+                Email.ajaxPost('https://smtpjs.com/v3/smtpjs.aspx?', t, function(e) {
+                    n(e);
+                });
+            });
+        },
+        ajaxPost: function(e, n, t) {
+            var a = Email.createCORSRequest('POST', e);
+            a.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'),
+                (a.onload = function() {
+                    var e = a.responseText;
+                    null != t && t(e);
+                }),
+                a.send(n);
+        },
+        ajax: function(e, n) {
+            var t = Email.createCORSRequest('GET', e);
+            (t.onload = function() {
+                var e = t.responseText;
+                null != n && n(e);
+            }),
+                t.send();
+        },
+        createCORSRequest: function(e, n) {
+            var t = new XMLHttpRequest();
+            return (
+                'withCredentials' in t
+                    ? t.open(e, n, !0)
+                    : 'undefined' != typeof XDomainRequest
+                    ? (t = new XDomainRequest()).open(e, n)
+                    : (t = null),
+                t
+            );
+        }
+    };
+
     var form = $('.form');
 
     var emailInput = $('.form__input[name="email"]');
@@ -33,17 +73,20 @@
             var body =
                 'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();
 
+            emailInput.val('');
+            nameInput.val('');
+            commentInput.val('');
+
             Email.send({
-                SecureToken: 'f59d2754-0d65-4c78-93e4-d260c4fc8d70',
-                To: 'cooltolia@gmail.com',
-                From: 'cooltolia@gmail.com',
+                SecureToken: '189816d4-5060-4120-ab59-10bc81d7ee1e',
+                To: 'abd.oybek@gmail.com',
+                From: 'abd.oybek@gmail.com',
                 Subject: 'Заявка с сайта ЦРПИ',
                 Body: body
-            }).then(function() {
+            }).then(function(e) {
+                console.log(e);
+
                 success.fadeIn(300).addClass('active');
-                emailInput.val('');
-                nameInput.val('');
-                commentInput.val('');
             });
         }
     });

@@ -36,6 +36,10 @@
     margin: 0 auto;
     list-style: none;
 
+    .slick-list {
+        padding-left: 70px;
+    }
+
     .slick-track {
         display: flex;
         align-items: stretch;
@@ -52,37 +56,24 @@
 
 .investment__item {
     flex: 1 1 auto;
-    margin: 0 8px;
+    margin: 0 16px 0 0;
 
     border-radius: 6px;
     overflow: hidden;
-
-    &:first-child {
-        width: 100%;
-        margin-left: 20px;
-    }
-
-    &:last-child {
-        margin-right: 20px;
-    }
-
-    &:nth-child(1) {
-        .investment__item-image {
-            background-image: url('../images/investment/investment1_s.jpg');
-        }
-    }
-
-    &:nth-child(2) {
-        .investment__item-image {
-            background-image: url('../images/investment/investment2_s.jpg');
-        }
-    }
 }
 
 .investment__item-image {
     width: 100%;
     height: 225px;
     background-size: cover;
+
+    &.lavna {
+        background-image: url('../images/investment/investment1_s.jpg');
+    }
+
+    &.sukhodol {
+        background-image: url('../images/investment/investment2_s.jpg');
+    }
 }
 
 .investment__item-content {
@@ -144,30 +135,22 @@
 @media #{$tablet} {
     .investment__list {
         max-width: 768px;
-    }
 
-    .investment__item {
-        &:first-child {
-            margin-left: 64px;
-
-            
-            .investment__item-image {
-                background-image: url('../images/investment/investment1.jpg');
-            }
-        }
-
-        &:last-child {
-            margin-right: 64px;
-
-            
-            .investment__item-image {
-                background-image: url('../images/investment/investment2.jpg');
-            }
+        .slick-list {
+            padding-left: 105px;
         }
     }
 
     .investment__item-image {
         height: 300px;
+
+        &.lavna {
+            background-image: url('../images/investment/investment1.jpg');
+        }
+
+        &.sukhodol {
+            background-image: url('../images/investment/investment2.jpg');
+        }
     }
 }
 
@@ -198,6 +181,10 @@
 
     .investment__list {
         max-width: 1440px;
+
+        .slick-list {
+            padding-left: 120px;
+        }
 
         .slick-slide {
             height: 680px;
@@ -267,27 +254,21 @@
         }
 
         .slick-prev {
+            display: none !important;
             left: 90px;
+            transform: translateY(-50%);
         }
 
         .slick-next {
             left: auto;
             right: 90px;
-
-            transform: rotate(180deg);
+            transform: rotate(180deg) translateY(50%);
         }
     }
 
     .investment__item {
         border-radius: 30% / 3%;
         overflow: hidden;
-        &:first-child {
-            margin-left: 140px;
-        }
-
-        &:last-child {
-            margin-right: 140px;
-        }
     }
 
     .investment__item-image {

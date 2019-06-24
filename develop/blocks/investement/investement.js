@@ -1,5 +1,6 @@
 (function() {
     var slider = $('.investment__list');
+    var lang = $('html').attr('lang');
 
     slider.slick({
         slidesToShow: 1.17,
@@ -7,9 +8,10 @@
         arrows: false,
         infinite: false,
         mobileFirst: true,
+        infinite: true,
         responsive: [
             {
-                breakpoint: 1280,
+                breakpoint: 1279,
                 settings: {
                     arrows: true,
                     slidesToShow: 1.1
@@ -29,11 +31,13 @@
         if (_this.hasClass('active')) {
             _this.removeClass('active');
             hidden.hide();
-            _this.text('Развернуть');
+
+            lang === 'ru' ? _this.text('Развернуть') : _this.text('More');
         } else {
             _this.addClass('active');
             hidden.show().css('display', 'inline');
-            _this.text('Скрыть');
+            
+            lang === 'ru' ? _this.text('Скрыть') : _this.text('Hide');
         }
     });
 })();

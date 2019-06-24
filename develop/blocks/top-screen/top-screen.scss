@@ -157,11 +157,10 @@
 
     background-color: darken($themecolor, 10%);
 
-    svg {
+    img {
+        display: block;
         width: 20px;
-        height: 21px;
-
-        fill: #fff;
+        height: 14px;
     }
 }
 
@@ -170,7 +169,7 @@
     width: 40px;
     height: 40px;
     left: 50%;
-    bottom: -124px;
+    bottom: -4px;
     transform: translateX(-50%) rotate(-90deg);
 
     background-color: #fff;
@@ -228,6 +227,7 @@
 
 @media #{$laptop} {
     .top-screen {
+        min-height: 100vh;
         padding-top: 90px;
         padding-bottom: 155px;
     
@@ -278,9 +278,9 @@
     .top-screen__button-icon {
         width: 57px;
 
-        svg {
+        img {
             width: 29px;
-            height: 28px;
+            height: 20px;
         }
     }
 
@@ -297,6 +297,7 @@
     .top-screen__down-link {
         width: 80px;
         height: 80px;
+        bottom: 30px;
 
         .icon {
             width: 40px;
