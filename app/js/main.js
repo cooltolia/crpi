@@ -58,27 +58,35 @@ jQuery(document).ready(function($) {
         
                 if (isValidEmail && isValidName && isValidComment) {
                     errors.hide();
-                    var formData = form.serialize();
+                    // var formData = form.serialize();
         
-                    $.ajax({
-                        url: '/',
-                        type: 'POST',
-                        data: formData,
-                        contentType: 'multipart/form-data',
-                        success: function(data) {
-                            success.fadeIn(300).addClass('active');
-                            emailInput.val('');
-                            nameInput.val('');
-                            commentInput.val('');
-                        },
-                        error: function(data) {
-                            // alert(JSON.stringify(data));
-                            success.fadeIn(300).addClass('active');
-                            emailInput.val('');
-                            nameInput.val('');
-                            commentInput.val('');
-                        }
-                    });
+                    Email.send({
+                        SecureToken: 'bd2db3be-05cd-4518-81a3-4bc9d28d7b8b',
+                        To: 'cooltolia@gmail.com',
+                        From: 'cooltolia@mail.ru',
+                        Subject: 'nameInput',
+                        Body: 'commentInput'
+                    }).then(message => alert(message));
+        
+                    // $.ajax({
+                    //     url: '/',
+                    //     type: 'POST',
+                    //     data: formData,
+                    //     contentType: 'multipart/form-data',
+                    //     success: function(data) {
+                    //         success.fadeIn(300).addClass('active');
+                    //         emailInput.val('');
+                    //         nameInput.val('');
+                    //         commentInput.val('');
+                    //     },
+                    //     error: function(data) {
+                    //         // alert(JSON.stringify(data));
+                    //         success.fadeIn(300).addClass('active');
+                    //         emailInput.val('');
+                    //         nameInput.val('');
+                    //         commentInput.val('');
+                    //     }
+                    // });
                 }
             });
         
