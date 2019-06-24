@@ -1,14 +1,20 @@
 mixin form()
-    +b.FORM.form#form(name='mainForm')
+    +b.FORM.form#form(name='mainForm' novalidate)
         +e.heading
             +heading('Напишите нам')
-        +e.input-row
+        +e.input-row.--first
             +e.LABEL.label(for='formName') Ваше имя
-            +e.INPUT.input(type='text' name='name' id='formName')
+            +e.INPUT.input(type='text' name='name' id='formName' required)
+            +e.SPAN.error
         +e.input-row
             +e.LABEL.label(for='formEmail') E-mail
-            +e.INPUT.input(type='text' name='email' id='formEmail')
+            +e.INPUT.input(type='text' name='email' id='formEmail' required)
+            +e.SPAN.error
         +e.input-row
             +e.LABEL.label(for='formComment') Сообщение
-            +e.TEXTAREA.textarea(name='comment' id='formComment')
+            +e.TEXTAREA.textarea(name='comment' id='formComment' required)
         +e.BUTTON.submit(type='submit') Отправить
+        +e.success
+            +e.success-title Сообщение отправлено
+            +e.success-text В ближайшее время мы с вами свяжемся
+            +e.BUTTON.success-button(type='button') Написать еще

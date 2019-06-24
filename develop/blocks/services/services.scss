@@ -23,6 +23,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    &::selection {
+        color: $themecolor;
+    }
 }
 
 .services__list {
@@ -93,4 +97,112 @@
     text-align: center;
 
     background-color: #eee;
+
+    &::selection {
+        color: $themecolor;
+    }
+}
+
+@media #{$tablet} {
+    .services__item {
+        height: 280px;
+
+        &:nth-child(1) {
+            .services__item-image {
+                background-image: url('../images/services/service1.jpeg');
+            }
+        }
+
+        &:nth-child(2) {
+            .services__item-image {
+                background-image: url('../images/services/service2.jpeg');
+            }
+        }
+
+        &:nth-child(3) {
+            .services__item-image {
+                background-image: url('../images/services/service3.jpeg');
+            }
+        }
+    }
+}
+
+@media #{$laptop} {
+    .services {
+        padding-top: 110px;
+    }
+
+    .services__content {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .services__heading {
+        width: 39%;
+        margin-right: 3%;
+        flex: 0 0 auto;
+    }
+
+    .services__text {
+        flex: 1 1 auto;
+
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .services__list {
+        flex-flow: column wrap;
+        height: 705px;
+        margin: 0;
+    }
+
+    .services__item {
+        height: 40%;
+        flex: 1 1 auto;
+        margin: 0 0 40px;
+
+        &:nth-child(1) {
+            width: 58%;
+        }
+
+        &:nth-child(2) {
+            width: 39%;
+            order: -1;
+            height: 100%;
+            margin-right: 3%;
+            margin-bottom: 0;
+        }
+
+        &:nth-child(3) {
+            width: 58%;
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            flex-flow: row nowrap;
+            align-items: stretch;
+
+            .services__item-desc {
+                width: 30%;
+                height: 100%;
+                padding: 20px;
+
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .services__item-image {
+                height: 100%;
+            }
+        }
+    }
+
+    .services__item-desc {
+        height: 60px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 19px;
+    }
 }

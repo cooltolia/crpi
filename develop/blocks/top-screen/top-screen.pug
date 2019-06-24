@@ -3,7 +3,7 @@ mixin top-screen()
         +inner
             +e.HEADER.header
                 +e.logo
-                    include ../../../app/images/svg/inline-svg/logo.svg
+                    img(src="images/logo.svg", alt="")
                 +e.A.lang(href='./en') in English
             +e.H1.title АО «ЦЕНТР РАЗВИТИЯ ПОРТОВОЙ ИНФРАСТРУКТУРЫ»
             +e.H2.subtitle Инвестиции в транспортную инфраструктуру и оказание  логистических услуг
@@ -16,4 +16,4 @@ mixin top-screen()
                     include ../../../app/images/svg/inline-svg/round-arrow.svg
                 span.icon.hover
                     include ../../../app/images/svg/inline-svg/round-arrow-alt.svg
-            +e.decor
+        +e.decor

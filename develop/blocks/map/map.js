@@ -1,10 +1,11 @@
 (function() {
-    var zoom = 17;
+    var zoom = 16;
     var address = [55.780583, 37.590677];
     var center = [55.780583, 37.590677];
 
-    if ($(window).width() < 480) {
-        zoom = 16;
+    if ($(window).width() > 1280) {
+        zoom = 17;
+        center = [55.780761, 37.593976];
     }
 
     ymaps.ready(function() {

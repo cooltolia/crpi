@@ -1,7 +1,11 @@
 (function() {
     var block = $('.top-screen');
+    var speed = 3;
+    if ($(window).width() > 1260) {
+        speed = 7
+    }
     $(window).on('scroll', function() {
-        var yPos = -($(window).scrollTop() / 3);
+        var yPos = -($(window).scrollTop() / speed);
         var coords = 'center ' + yPos + 'px';
         block.css({ backgroundPosition: coords });
     });

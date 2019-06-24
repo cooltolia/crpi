@@ -6,4 +6,14 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 51px;
+
+    &::selection {
+        color: $themecolor;
+    }
+}
+
+@media #{$laptop} {
+    .heading {
+        font-size: 48px;
+    }
 }

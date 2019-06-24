@@ -11,7 +11,8 @@
             {
                 breakpoint: 1280,
                 settings: {
-                    arrows: true
+                    arrows: true,
+                    slidesToShow: 1.1
                 }
             }
         ]

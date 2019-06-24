@@ -24,6 +24,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    &::selection {
+        color: $themecolor;
+    }
 }
 
 .investment__list {
@@ -37,7 +41,7 @@
         align-items: stretch;
     }
 
-    .slick-slide{
+    .slick-slide {
         display: flex;
         flex-flow: column wrap;
         height: auto;
@@ -98,6 +102,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+
+    &::selection {
+        color: $themecolor;
+    }
 }
 
 .investment__item-text {
@@ -108,6 +116,10 @@
 
     .more {
         display: none;
+    }
+
+    &::selection {
+        color: $themecolor;
     }
 }
 
@@ -126,5 +138,192 @@
     &:focus {
         color: darken($themecolor, $amount: 10%);
         text-decoration: none;
+    }
+}
+
+@media #{$tablet} {
+    .investment__list {
+        max-width: 768px;
+    }
+
+    .investment__item {
+        &:first-child {
+            margin-left: 64px;
+
+            
+            .investment__item-image {
+                background-image: url('../images/investment/investment1.jpg');
+            }
+        }
+
+        &:last-child {
+            margin-right: 64px;
+
+            
+            .investment__item-image {
+                background-image: url('../images/investment/investment2.jpg');
+            }
+        }
+    }
+
+    .investment__item-image {
+        height: 300px;
+    }
+}
+
+@media #{$laptop} {
+    .investment {
+        padding-top: 150px;
+    }
+
+    .investment__heading {
+        margin-bottom: 20px;
+
+        .heading {
+            text-align: center;
+        }
+    }
+
+    .investment__content {
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    .investment__text {
+        display: inline;
+
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .investment__list {
+        max-width: 1440px;
+
+        .slick-slide {
+            height: 680px;
+            flex-flow: row nowrap;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            padding: 0;
+            top: 50%;
+
+            font-size: 0;
+            background-color: #fff;
+
+            border-radius: 50%;
+            border: none;
+            outline: none;
+
+            cursor: pointer;
+            pointer-events: initial;
+
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.07);
+
+            &.slick-disabled {
+                opacity: 0;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                opacity: 1;
+
+                background-image: url('../images/svg/inline-svg/round-arrow.svg');
+                background-position: cover;
+
+                transition: opacity 300ms ease;
+            }
+
+            &::after {
+                opacity: 0;
+                background-image: url('../images/svg/inline-svg/round-arrow-alt.svg');
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .slick-prev {
+            left: 90px;
+        }
+
+        .slick-next {
+            left: auto;
+            right: 90px;
+
+            transform: rotate(180deg);
+        }
+    }
+
+    .investment__item {
+        border-radius: 30% / 3%;
+        overflow: hidden;
+        &:first-child {
+            margin-left: 140px;
+        }
+
+        &:last-child {
+            margin-right: 140px;
+        }
+    }
+
+    .investment__item-image {
+        height: 100%;
+        order: 1;
+    }
+
+    .investment__item-content {
+        width: 33%;
+        padding: 50px 40px;
+    }
+
+    .investment__item-image {
+        width: 67%;
+    }
+
+    .investment__item-title {
+        position: static;
+        margin-bottom: 20px;
+
+        color: $text-color;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .investment__item-text {
+        font-size: 16px;
+        line-height: 30px;
+
+        .more {
+            display: inline;
+        }
+    }
+
+    .investment__more-link {
+        display: none;
     }
 }

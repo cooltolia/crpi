@@ -32,7 +32,61 @@ jQuery(document).ready(function($) {
 
     function globalInitFunction() {
         
-                
+                (function() {
+            var form = $('.form');
+        
+            var emailInput = $('.form__input[name="email"]');
+            emailInput.inputmask({ alias: 'email', jitMasking: true });
+            var nameInput = $('.form__input[name="name"]');
+            var commentInput = $('.form__textarea');
+            var errors = $('.form__error');
+        
+            var success = $('.form__success');
+            var successButton = $('.form__success-button');
+        
+            form.on('submit', function(e) {
+                e.preventDefault();
+        
+                var isValidEmail = Inputmask.isValid(emailInput.val(), { alias: 'email' });
+                var isValidName = nameInput.val().length >= 3 ? true : false;
+                var isValidComment = commentInput.val().length >= 3 ? true : false;
+        
+                /** show errors if input value is incorrect */
+                if (!isValidEmail) emailInput.next().show();
+                if (!isValidName) nameInput.next().show();
+                if (!isValidComment) commentInput.next().show();
+        
+                if (isValidEmail && isValidName && isValidComment) {
+                    errors.hide();
+                    var formData = form.serialize();
+        
+                    $.ajax({
+                        url: '/',
+                        type: 'POST',
+                        data: formData,
+                        contentType: 'multipart/form-data',
+                        success: function(data) {
+                            success.fadeIn(300).addClass('active');
+                            emailInput.val('');
+                            nameInput.val('');
+                            commentInput.val('');
+                        },
+                        error: function(data) {
+                            // alert(JSON.stringify(data));
+                            success.fadeIn(300).addClass('active');
+                            emailInput.val('');
+                            nameInput.val('');
+                            commentInput.val('');
+                        }
+                    });
+                }
+            });
+        
+            successButton.on('click', function() {
+                success.fadeOut(300).removeClass('active');
+            });
+        })();
+        
                 
                 
                 (function() {
@@ -48,7 +102,8 @@ jQuery(document).ready(function($) {
                     {
                         breakpoint: 1280,
                         settings: {
-                            arrows: true
+                            arrows: true,
+                            slidesToShow: 1.1
                         }
                     }
                 ]
@@ -75,12 +130,13 @@ jQuery(document).ready(function($) {
         })();
         
                 (function() {
-            var zoom = 17;
+            var zoom = 16;
             var address = [55.780583, 37.590677];
             var center = [55.780583, 37.590677];
         
-            if ($(window).width() < 480) {
-                zoom = 16;
+            if ($(window).width() > 1280) {
+                zoom = 17;
+                center = [55.780761, 37.593976];
             }
         
             ymaps.ready(function() {
@@ -123,8 +179,12 @@ jQuery(document).ready(function($) {
                 
                 (function() {
             var block = $('.top-screen');
+            var speed = 3;
+            if ($(window).width() > 1260) {
+                speed = 7
+            }
             $(window).on('scroll', function() {
-                var yPos = -($(window).scrollTop() / 3);
+                var yPos = -($(window).scrollTop() / speed);
                 var coords = 'center ' + yPos + 'px';
                 block.css({ backgroundPosition: coords });
             });

@@ -1,4 +1,6 @@
 .map {
+    position: relative;
+
     color: $text-color;
     font-family: $font;
 }
@@ -6,8 +8,6 @@
 .map__container {
     width: 100%;
     height: 325px;
-    max-width: 480px;
-    margin: 0 auto;
 
     #map {
         width: 100%;
@@ -40,4 +40,43 @@
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 14px 50px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media #{$tablet} {
+    .map__form {
+        width: 360px;
+        margin-top: -100px;
+    }
+}
+
+@media #{$laptop} {
+    .map__container {
+        max-width: none;
+        height: 650px;
+    }
+
+    .map__form-container {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        height: 100%;
+        padding: 0 140px;
+        max-width: 1440px;
+        right: 0;
+
+        pointer-events: none;
+    }
+
+    .map__form {
+        position: absolute;
+        width: 560px;
+        margin-top: 0;
+        right: 0;
+        top: 115px;
+
+        pointer-events: initial;
+    }
 }
