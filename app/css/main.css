@@ -910,7 +910,8 @@ th {
     font-size: 24px;
     line-height: 32px; }
   .investment__list {
-    max-width: 1440px; }
+    max-width: 1440px;
+    padding-left: 140px; }
     .investment__list .slick-list {
       padding-left: 120px; }
     .investment__list .slick-slide {
@@ -966,15 +967,14 @@ th {
       .investment__list .slick-arrow:hover::after, .investment__list .slick-arrow:active::after, .investment__list .slick-arrow:focus::after {
         opacity: 1; }
     .investment__list .slick-prev {
-      display: none !important;
-      left: 90px;
+      left: 100px;
       -webkit-transform: translateY(-50%);
          -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
     .investment__list .slick-next {
       left: auto;
-      right: 90px;
+      right: 180px;
       -webkit-transform: rotate(180deg) translateY(50%);
          -moz-transform: rotate(180deg) translateY(50%);
           -ms-transform: rotate(180deg) translateY(50%);
@@ -1019,6 +1019,9 @@ th {
   .map__container #map {
     width: 100%;
     height: 100%; }
+    .map__container #map * {
+      -ms-touch-action: auto;
+          touch-action: auto; }
   .map__container #customPlacemark {
     width: 44px;
     height: 60px;

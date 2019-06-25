@@ -181,6 +181,7 @@
 
     .investment__list {
         max-width: 1440px;
+        padding-left: 140px;
 
         .slick-list {
             padding-left: 120px;
@@ -254,14 +255,13 @@
         }
 
         .slick-prev {
-            display: none !important;
-            left: 90px;
+            left: 100px;
             transform: translateY(-50%);
         }
 
         .slick-next {
             left: auto;
-            right: 90px;
+            right: 180px;
             transform: rotate(180deg) translateY(50%);
         }
     }

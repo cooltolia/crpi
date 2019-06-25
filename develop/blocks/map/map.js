@@ -40,6 +40,8 @@
         });
 
         myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('drag');
+        map.behaviors.disable('multiTouch');
         myMap.behaviors.disable('scrollZoom');
     });
 })();
