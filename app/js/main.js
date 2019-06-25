@@ -282,9 +282,13 @@ jQuery(document).ready(function($) {
 
         slider.slick({
 
-            slidesToShow: 1.17,
+            slidesToShow: 1,
 
             slidesToScroll: 1,
+
+            centerMode: true,
+
+            centerPadding: '10%',
 
             arrows: false,
 
@@ -298,13 +302,25 @@ jQuery(document).ready(function($) {
 
                 {
 
+                    breakpoint: 767,
+
+                    settings: {
+
+                        centerPadding: '20%'
+
+                    }
+
+                },
+
+                {
+
                     breakpoint: 1279,
 
                     settings: {
 
                         arrows: true,
 
-                        slidesToShow: 1.1
+                        // centerPadding: '20%'
 
                     }
 
@@ -348,7 +364,7 @@ jQuery(document).ready(function($) {
 
                 hidden.show().css('display', 'inline');
 
-                
+    
 
                 lang === 'ru' ? _this.text('Скрыть') : _this.text('Hide');
 

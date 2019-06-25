@@ -793,8 +793,6 @@ th {
   padding: 0;
   margin: 0 auto;
   list-style: none; }
-  .investment__list .slick-list {
-    padding-left: 70px; }
   .investment__list .slick-track {
     display: -webkit-box;
     display: -moz-box;
@@ -823,7 +821,7 @@ th {
      -moz-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 0 16px 0 0;
+  margin: 0 8px 0;
   border-radius: 6px;
   overflow: hidden; }
 
@@ -886,8 +884,6 @@ th {
 @media (min-width: 768px) {
   .investment__list {
     max-width: 768px; }
-    .investment__list .slick-list {
-      padding-left: 105px; }
   .investment__item-image {
     height: 300px; }
     .investment__item-image.lavna {
@@ -910,10 +906,7 @@ th {
     font-size: 24px;
     line-height: 32px; }
   .investment__list {
-    max-width: 1440px;
-    padding-left: 140px; }
-    .investment__list .slick-list {
-      padding-left: 120px; }
+    max-width: 1440px; }
     .investment__list .slick-slide {
       height: 680px;
       -webkit-box-orient: horizontal;
@@ -967,14 +960,14 @@ th {
       .investment__list .slick-arrow:hover::after, .investment__list .slick-arrow:active::after, .investment__list .slick-arrow:focus::after {
         opacity: 1; }
     .investment__list .slick-prev {
-      left: 100px;
+      left: 7%;
       -webkit-transform: translateY(-50%);
          -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
     .investment__list .slick-next {
       left: auto;
-      right: 180px;
+      right: 7%;
       -webkit-transform: rotate(180deg) translateY(50%);
          -moz-transform: rotate(180deg) translateY(50%);
           -ms-transform: rotate(180deg) translateY(50%);
@@ -1007,6 +1000,21 @@ th {
       display: inline; }
   .investment__more-link {
     display: none; } }
+
+@media (min-width: 1439px) {
+  .investment__list .slick-prev {
+    left: 105px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .investment__list .slick-next {
+    left: auto;
+    right: 105px;
+    -webkit-transform: rotate(180deg) translateY(50%);
+       -moz-transform: rotate(180deg) translateY(50%);
+        -ms-transform: rotate(180deg) translateY(50%);
+            transform: rotate(180deg) translateY(50%); } }
 
 .map {
   position: relative;
@@ -1066,19 +1074,13 @@ th {
     max-width: none;
     height: 650px; }
   .map__form-container {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-       -moz-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
     width: 100%;
     height: 100%;
     padding: 0 140px;
     max-width: 1440px;
-    right: 0;
+    margin: -650px auto 650px;
     pointer-events: none; }
   .map__form {
     position: absolute;
