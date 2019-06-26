@@ -47,6 +47,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(#cdcdcd, 0.7);
+    appearance: none;
 
     transition: border-color 300ms ease;
 
@@ -198,6 +199,7 @@
 
     .form__success-text {
         color: $text-color;
+        font-weight: 300;
     }
 
     .form__success-button {
