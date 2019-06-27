@@ -65,11 +65,11 @@
     background-size: cover;
 
     &.lavna {
-        background-image: url('../images/investment/investment1_s.jpg');
+        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment1_s.jpg');
     }
 
     &.sukhodol {
-        background-image: url('../images/investment/investment2_s.jpg');
+        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment2_s.jpg');
     }
 }
 
@@ -138,11 +138,11 @@
         height: 300px;
 
         &.lavna {
-            background-image: url('../images/investment/investment1.jpg');
+            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment1.jpg');
         }
 
         &.sukhodol {
-            background-image: url('../images/investment/investment2.jpg');
+            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment2.jpg');
         }
     }
 }

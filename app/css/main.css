@@ -812,9 +812,15 @@ th {
   height: 225px;
   background-size: cover; }
   .investment__item-image.lavna {
-    background-image: url("../images/investment/investment1_s.jpg"); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/investment/investment1_s.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment1_s.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment1_s.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment1_s.jpg"); }
   .investment__item-image.sukhodol {
-    background-image: url("../images/investment/investment2_s.jpg"); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/investment/investment2_s.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment2_s.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment2_s.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment2_s.jpg"); }
 
 .investment__item-content {
   -webkit-box-flex: 1;
@@ -869,9 +875,15 @@ th {
   .investment__item-image {
     height: 300px; }
     .investment__item-image.lavna {
-      background-image: url("../images/investment/investment1.jpg"); }
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/investment/investment1.jpg");
+      background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment1.jpg");
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment1.jpg");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment1.jpg"); }
     .investment__item-image.sukhodol {
-      background-image: url("../images/investment/investment2.jpg"); } }
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/investment/investment2.jpg");
+      background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment2.jpg");
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment2.jpg");
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/investment/investment2.jpg"); } }
 
 @media (min-width: 1280px) {
   .investment {
