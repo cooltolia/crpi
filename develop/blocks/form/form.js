@@ -50,25 +50,43 @@
     var success = $('.form__success');
     var successButton = $('.form__success-button');
 
+    var isValidEmail = function() {
+        return Inputmask.isValid(emailInput.val(), { alias: 'email' });
+    };
+    var isValidName = function() {
+        return nameInput.val().length >= 3 ? true : false;
+    };
+    var isValidComment = function() {
+        return commentInput.val().length >= 3 ? true : false;
+    };
+
+    /** hide errors dynamically */
+    emailInput.on('input', function() {
+        if (isValidEmail()) emailInput.next().hide();
+    });
+    nameInput.on('input', function() {
+        if (isValidName()) nameInput.next().hide();
+    });
+    commentInput.on('input', function() {
+        if (isValidComment()) commentInput.next().hide();
+    });
+
     form.on('submit', function(e) {
         e.preventDefault();
 
-        var isValidEmail = Inputmask.isValid(emailInput.val(), { alias: 'email' });
-        var isValidName = nameInput.val().length >= 3 ? true : false;
-        var isValidComment = commentInput.val().length >= 3 ? true : false;
         var antispam = $('input.agreeCheckbox');
 
         /** show errors if input value is incorrect */
-        if (!isValidEmail) emailInput.next().show();
-        if (!isValidName) nameInput.next().show();
-        if (!isValidComment) commentInput.next().show();
+        if (!isValidEmail()) emailInput.next().show();
+        if (!isValidName()) nameInput.next().show();
+        if (!isValidComment()) commentInput.next().show();
 
         if (antispam.prop('checked') == true) {
             console.log('spamer ;(');
             return;
         }
 
-        if (isValidEmail && isValidName && isValidComment) {
+        if (isValidEmail() && isValidName() && isValidComment()) {
             errors.hide();
             var body =
                 'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();

@@ -66,6 +66,16 @@ jQuery(document).ready(function($) {
 
     const isMobile = this.isMobile;
 
+    document.addEventListener(
+        'touchstart',
+        function addtouchclass(e) {
+            // first time user touches the screen
+            document.documentElement.classList.add('can-touch');
+            document.removeEventListener('touchstart', addtouchclass, false);
+        },
+        false
+    );
+
     
 
     
@@ -173,17 +183,53 @@ jQuery(document).ready(function($) {
 
     
 
+        var isValidEmail = function() {
+
+            return Inputmask.isValid(emailInput.val(), { alias: 'email' });
+
+        };
+
+        var isValidName = function() {
+
+            return nameInput.val().length >= 3 ? true : false;
+
+        };
+
+        var isValidComment = function() {
+
+            return commentInput.val().length >= 3 ? true : false;
+
+        };
+
+    
+
+        /** hide errors dynamically */
+
+        emailInput.on('input', function() {
+
+            if (isValidEmail()) emailInput.next().hide();
+
+        });
+
+        nameInput.on('input', function() {
+
+            if (isValidName()) nameInput.next().hide();
+
+        });
+
+        commentInput.on('input', function() {
+
+            if (isValidComment()) commentInput.next().hide();
+
+        });
+
+    
+
         form.on('submit', function(e) {
 
             e.preventDefault();
 
     
-
-            var isValidEmail = Inputmask.isValid(emailInput.val(), { alias: 'email' });
-
-            var isValidName = nameInput.val().length >= 3 ? true : false;
-
-            var isValidComment = commentInput.val().length >= 3 ? true : false;
 
             var antispam = $('input.agreeCheckbox');
 
@@ -191,11 +237,11 @@ jQuery(document).ready(function($) {
 
             /** show errors if input value is incorrect */
 
-            if (!isValidEmail) emailInput.next().show();
+            if (!isValidEmail()) emailInput.next().show();
 
-            if (!isValidName) nameInput.next().show();
+            if (!isValidName()) nameInput.next().show();
 
-            if (!isValidComment) commentInput.next().show();
+            if (!isValidComment()) commentInput.next().show();
 
     
 
@@ -209,7 +255,7 @@ jQuery(document).ready(function($) {
 
     
 
-            if (isValidEmail && isValidName && isValidComment) {
+            if (isValidEmail() && isValidName() && isValidComment()) {
 
                 errors.hide();
 
@@ -535,8 +581,6 @@ jQuery(document).ready(function($) {
         });
 
     })();
-
-    
 
     
 });

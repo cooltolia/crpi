@@ -130,6 +130,19 @@
     }
 }
 
+.can-touch .top-screen__button {
+    &:hover,
+    &:active,
+    &:focus {
+        .top-screen__button-body {
+            color: $light-text;
+            text-decoration: none;
+
+            background-color: $themecolor;
+        }
+    }
+}
+
 .top-screen__button-body {
     flex: 1 1 auto;
     display: flex;

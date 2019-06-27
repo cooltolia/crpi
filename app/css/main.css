@@ -1038,7 +1038,7 @@ th {
 .map__form {
   position: relative;
   z-index: 1;
-  margin: -20px auto 0;
+  margin: -10px auto 0;
   width: 280px;
   border-radius: 10px;
   background-color: #fff;
@@ -1488,6 +1488,11 @@ th {
       color: #ffffff;
       text-decoration: none;
       background-color: #8e3016; }
+
+.can-touch .top-screen__button:hover .top-screen__button-body, .can-touch .top-screen__button:active .top-screen__button-body, .can-touch .top-screen__button:focus .top-screen__button-body {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ba3f1d; }
 
 .top-screen__button-body {
   -webkit-box-flex: 1;

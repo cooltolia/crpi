@@ -66,7 +66,15 @@ jQuery(document).ready(function($) {
 
     const isMobile = this.isMobile;
 
-    //=require ../blocks/**/*.js
+    document.addEventListener(
+        'touchstart',
+        function addtouchclass(e) {
+            // first time user touches the screen
+            document.documentElement.classList.add('can-touch');
+            document.removeEventListener('touchstart', addtouchclass, false);
+        },
+        false
+    );
 
-    
+    //=require ../blocks/**/*.js
 });
