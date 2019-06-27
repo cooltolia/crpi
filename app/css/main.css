@@ -504,9 +504,10 @@ th {
   border: none;
   outline: none;
   border-bottom: 2px solid rgba(205, 205, 205, 0.7);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  border-radius: 0px;
   -webkit-transition: border-color 300ms ease;
   -moz-transition: border-color 300ms ease;
   transition: border-color 300ms ease; }
@@ -801,6 +802,7 @@ th {
      -moz-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding-right: 1px;
   margin: 0 8px 0;
   border-radius: 6px;
   overflow: hidden; }

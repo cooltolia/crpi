@@ -47,7 +47,8 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(#cdcdcd, 0.7);
-    appearance: none;
+    appearance: none !important;
+    border-radius: 0px;
 
     transition: border-color 300ms ease;
 
