@@ -117,8 +117,7 @@
     box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.5);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
         text-decoration: none;
 
         .top-screen__button-body {
@@ -127,6 +126,10 @@
 
             background-color: darken($themecolor, 10%);
         }
+    }
+
+    &:focus {
+        text-decoration: none;
     }
 }
 
@@ -190,8 +193,7 @@
     box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.07);
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
         .icon {
             opacity: 0;
 
@@ -240,7 +242,7 @@
 
 @media #{$laptop} {
     .top-screen {
-        min-height: 100vh;
+        // min-height: 100vh;
         padding-top: 90px;
         padding-bottom: 155px;
     

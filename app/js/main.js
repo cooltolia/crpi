@@ -443,6 +443,12 @@ jQuery(document).ready(function($) {
 
     
 
+        var lang = $('html').attr('lang');
+
+        var addressText = lang === 'ru' ? 'г. Москва, ул. Лесная, д. 43' : '43, Lesnaya street, Moscow';
+
+    
+
         ymaps.ready(function() {
 
             var myMap;
@@ -467,9 +473,9 @@ jQuery(document).ready(function($) {
 
                 {
 
-                    hintContent: 'г. Москва, ул. Лесная, д. 43',
+                    hintContent: addressText,
 
-                    balloonContent: 'г. Москва, ул. Лесная, д. 43'
+                    balloonContent: addressText
 
                 },
 

@@ -4,15 +4,15 @@ mixin top-screen-en()
             +e.HEADER.header
                 +e.logo
                     img(src="images/logo.svg", alt="")
-                +e.A.lang(href='./en') на Русском
-            +e.H1.title АО «ЦЕНТР РАЗВИТИЯ ПОРТОВОЙ ИНФРАСТРУКТУРЫ»
-            +e.H2.subtitle Инвестиции в транспортную инфраструктуру и оказание  логистических услуг
+                +e.A.lang(href='../') на Русском
+            +e.H1.title Port Infrastructure Development Center, JSC
+            +e.H2.subtitle  Investments in transport infrastructure and provision of logistics services
             +e.A.button(href='#form') 
-                +e.SPAN.button-body Связаться
+                +e.SPAN.button-body Contact us
                 +e.SPAN.button-icon
                     img(src="images/svg/inline-svg/btn-arrow.svg", alt="")
         +e.decor
-        +e.A.down-link(href='#services' title='К описанию услуг')
+        +e.A.down-link(href='#services' title='scroll to services')
             span.icon
                 include ../../../app/images/svg/inline-svg/round-arrow.svg
             span.icon.hover

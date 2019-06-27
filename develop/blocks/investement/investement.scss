@@ -149,7 +149,7 @@
 
 @media #{$laptop} {
     .investment {
-        padding-top: 150px;
+        padding-top: 120px;
     }
 
     .investment__heading {
@@ -230,8 +230,7 @@
             }
 
             &:hover,
-            &:active,
-            &:focus {
+            &:active {
                 &::before {
                     opacity: 0;
                 }

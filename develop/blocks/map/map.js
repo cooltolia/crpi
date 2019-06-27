@@ -8,6 +8,9 @@
         center = [55.780761, 37.593976];
     }
 
+    var lang = $('html').attr('lang');
+    var addressText = lang === 'ru' ? 'г. Москва, ул. Лесная, д. 43' : '43, Lesnaya street, Moscow';
+
     ymaps.ready(function() {
         var myMap;
 
@@ -20,8 +23,8 @@
         var myPlacemark = new ymaps.Placemark(
             address,
             {
-                hintContent: 'г. Москва, ул. Лесная, д. 43',
-                balloonContent: 'г. Москва, ул. Лесная, д. 43'
+                hintContent: addressText,
+                balloonContent: addressText
             },
             {
                 iconLayout: squareLayout,

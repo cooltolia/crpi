@@ -1,9 +1,9 @@
 mixin form-en()
     +b.FORM.form#form(name='mainForm' novalidate)
         +e.heading
-            +heading('Напишите нам')
+            +heading('Contact us')
         +e.input-row.--first
-            +e.LABEL.label(for='formName') Ваше имя
+            +e.LABEL.label(for='formName') Your name
             +e.INPUT.input(type='text' name='name' id='formName' required)
             +e.SPAN.error
         +e.input-row
@@ -11,12 +11,12 @@ mixin form-en()
             +e.INPUT.input(type='text' name='email' id='formEmail' required)
             +e.SPAN.error
         +e.input-row
-            +e.LABEL.label(for='formComment') Сообщение
+            +e.LABEL.label(for='formComment') Message
             +e.TEXTAREA.textarea(name='comment' id='formComment' required)
             +e.SPAN.error
         input.agreeCheckbox(type="checkbox" name='agree')
-        +e.BUTTON.submit(type='submit') Отправить
+        +e.BUTTON.submit(type='submit') Send
         +e.success
-            +e.success-title Сообщение отправлено
-            +e.success-text В ближайшее время мы с вами свяжемся
-            +e.BUTTON.success-button(type='button') Написать еще
+            +e.success-title Your message has been sent
+            +e.success-text We will contact you shortly
+            +e.BUTTON.success-button(type='button') Send again
