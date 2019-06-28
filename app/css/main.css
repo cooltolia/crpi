@@ -761,7 +761,8 @@ th {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: 300;
-  line-height: 19px; }
+  line-height: 19px;
+  text-align: justify; }
   .investment__text:last-child {
     margin-bottom: 0; }
   .investment__text::-moz-selection {
@@ -848,7 +849,8 @@ th {
   margin: 0 0 15px;
   font-size: 14px;
   font-weight: 300;
-  line-height: 21px; }
+  line-height: 21px;
+  text-align: justify; }
   .investment__item-text .more {
     display: none; }
   .investment__item-text::-moz-selection {
@@ -894,7 +896,7 @@ th {
       text-align: center; }
   .investment__content {
     margin-bottom: 45px;
-    text-align: center; }
+    text-align: justify; }
   .investment__text {
     display: inline;
     font-size: 24px;
@@ -1188,7 +1190,8 @@ th {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: 300;
-  line-height: 19px; }
+  line-height: 19px;
+  text-align: justify; }
   .services__text:last-child {
     margin-bottom: 0; }
   .services__text::-moz-selection {

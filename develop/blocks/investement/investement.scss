@@ -20,6 +20,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
+    text-align: justify;
 
     &:last-child {
         margin-bottom: 0;
@@ -101,6 +102,7 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
+    text-align: justify;
 
     .more {
         display: none;
@@ -162,7 +164,7 @@
 
     .investment__content {
         margin-bottom: 45px;
-        text-align: center;
+        text-align: justify;
     }
 
     .investment__text {
