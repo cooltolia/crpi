@@ -536,7 +536,7 @@ jQuery(document).ready(function($) {
 
         var block = $('.top-screen');
 
-        var speed = 3;
+        var speed = 4;
 
         if ($(window).width() > 1260) {
 

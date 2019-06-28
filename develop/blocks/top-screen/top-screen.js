@@ -1,6 +1,6 @@
 (function() {
     var block = $('.top-screen');
-    var speed = 3;
+    var speed = 4;
     if ($(window).width() > 1260) {
         speed = 7
     }

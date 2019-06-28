@@ -269,6 +269,10 @@
 
         font-size: 70px;
         line-height: 92px;
+
+        &--long {
+            max-width: 1000px;
+        }
     }
 
     .top-screen__subtitle {
