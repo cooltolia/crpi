@@ -1,0 +1,33 @@
+mixin team()
+    +b.SECTION.team
+        +inner
+            +e.heading 
+                +heading('Команда')
+            +e.slider
+                +e.slide
+                    +e.content
+                        +e.avatar
+                            img(src="images/team/avatar1.jpg", alt="")
+                        +e.name Сергей Сергеев
+                        +e.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sapiente.
+                +e.slide
+                    +e.content
+                        +e.avatar
+                            img(src="images/team/avatar2.jpg", alt="")
+                        +e.name Анна Аннова
+                        +e.text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo debitis dolorem laborum dolor officia exercitationem perspiciatis sed facere eaque!
+                +e.slide
+                    +e.content
+                        +e.avatar
+                            img(src="images/team/avatar1.jpg", alt="")
+                        +e.name Иван Иванов
+                        +e.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sapiente.
+                +e.slide
+                    +e.content
+                        +e.avatar
+                            img(src="images/team/avatar2.jpg", alt="")
+                        +e.name Юлия Юлиевна
+                        +e.text Lorem ipsum dolor sit amet.
+            +e.counter
+                +e.counter-num.__counter-current 1
+                +e.counter-num.__counter-total 

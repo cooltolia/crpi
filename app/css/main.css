@@ -1158,7 +1158,7 @@ th {
 @media (min-width: 1280px) {
   .partners {
     padding-top: 100px;
-    padding-bottom: 150px; }
+    padding-bottom: 60px; }
   .partners__heading {
     margin-bottom: 40px; }
     .partners__heading .heading {
@@ -1257,6 +1257,174 @@ th {
   .services__text {
     font-size: 24px;
     line-height: 32px; } }
+
+.team {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  color: #333;
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+.team__heading {
+  margin-bottom: 20px; }
+
+.team__slider {
+  margin-bottom: 25px; }
+  .team__slider .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    top: 50%;
+    font-size: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    pointer-events: initial;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.07);
+            box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.07); }
+    .team__slider .slick-arrow.slick-disabled {
+      opacity: 0; }
+    .team__slider .slick-arrow::before, .team__slider .slick-arrow::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      opacity: 1;
+      background-image: url("../images/svg/inline-svg/round-arrow.svg");
+      background-position: cover;
+      -webkit-transition: opacity 300ms ease;
+      -moz-transition: opacity 300ms ease;
+      transition: opacity 300ms ease; }
+    .team__slider .slick-arrow::after {
+      opacity: 0;
+      background-image: url("../images/svg/inline-svg/round-arrow-alt.svg"); }
+    .team__slider .slick-arrow:hover::before, .team__slider .slick-arrow:active::before {
+      opacity: 0; }
+    .team__slider .slick-arrow:hover::after, .team__slider .slick-arrow:active::after {
+      opacity: 1; }
+  .team__slider .slick-prev {
+    left: -10px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .team__slider .slick-next {
+    left: auto;
+    right: -10px;
+    -webkit-transform: rotate(180deg) translateY(50%);
+       -moz-transform: rotate(180deg) translateY(50%);
+        -ms-transform: rotate(180deg) translateY(50%);
+            transform: rotate(180deg) translateY(50%); }
+
+.team__slide {
+  padding: 0 25px;
+  outline: none; }
+
+.team__avatar {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  overflow: hidden; }
+  .team__avatar img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+
+.team__name {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center; }
+
+.team__text {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center; }
+
+.team__counter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.team__counter-num {
+  font-size: 16px;
+  color: #999999; }
+
+.team__counter-current {
+  position: relative;
+  color: #ba3f1d; }
+
+.team__counter-total {
+  position: relative; }
+  .team__counter-total::before {
+    position: relative;
+    display: inline-block;
+    content: '/'; }
+
+@media (min-width: 768px) {
+  .team {
+    padding-top: 40px;
+    padding-bottom: 80px; }
+  .team__heading {
+    margin-bottom: 40px; }
+  .team__slider .slick-arrow {
+    width: 64px;
+    height: 64px; }
+  .team__content {
+    width: 500px;
+    margin: 0 auto; }
+  .team__avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 35px; }
+  .team__name {
+    font-size: 20px; }
+  .team__text {
+    font-size: 16px; } }
+
+@media (min-width: 1280px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 120px; }
+  .team__slider {
+    margin-bottom: 50px; }
+    .team__slider .slick-arrow {
+      width: 80px;
+      height: 80px; }
+  .team__content {
+    width: 650px;
+    margin: 0 auto; }
+  .team__avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 45px; }
+  .team__name {
+    font-size: 24px; }
+  .team__text {
+    font-size: 18px; }
+  .team__counter-num {
+    font-size: 18px; } }
 
 .top-screen {
   position: relative;
