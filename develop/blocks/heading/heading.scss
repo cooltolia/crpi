@@ -7,6 +7,10 @@
     font-weight: 400;
     line-height: 51px;
 
+    &.center {
+        text-align: center;
+    }
+
     &::selection {
         color: $themecolor;
     }

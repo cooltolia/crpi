@@ -1,2 +1,2 @@
-mixin heading(title)
-    +b.H2.heading&attributes(attributes)= title
+mixin heading(title, mod = '')
+    +b.H2.heading(class=mod)&attributes(attributes)= title
