@@ -1219,7 +1219,7 @@ th {
 .services__list {
   max-width: 480px;
   padding: 0;
-  margin: 0 auto;
+  margin: 25px auto 0;
   list-style: none; }
   .services__list .slick-track {
     display: -webkit-box;
