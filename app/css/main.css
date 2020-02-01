@@ -1282,6 +1282,7 @@ th {
   position: absolute;
   top: -50px;
   margin: 0;
+  padding-right: 20px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
