@@ -836,8 +836,13 @@ th {
 
 .investment__item-title {
   position: absolute;
-  top: -50px;
+  top: -20px;
   margin: 0;
+  padding-right: 20px;
+  -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -988,6 +993,10 @@ th {
   .investment__item-title {
     position: static;
     margin-bottom: 20px;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none;
     color: #333;
     font-size: 30px;
     font-weight: 700;
@@ -1280,9 +1289,13 @@ th {
 
 .services__item-title {
   position: absolute;
-  top: -50px;
+  top: -20px;
   margin: 0;
   padding-right: 20px;
+  -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -1463,6 +1476,10 @@ th {
   .services__item-title {
     position: static;
     margin-bottom: 20px;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none;
     color: #333;
     font-size: 30px;
     font-weight: 700;

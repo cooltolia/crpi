@@ -66,11 +66,13 @@
     background-size: cover;
 
     &.lavna {
-        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment1_s.jpg');
+        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
+            url('../images/investment/investment1_s.jpg');
     }
 
     &.sukhodol {
-        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment2_s.jpg');
+        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
+            url('../images/investment/investment2_s.jpg');
     }
 }
 
@@ -84,8 +86,11 @@
 
 .investment__item-title {
     position: absolute;
-    top: -50px;
+    top: -20px;
     margin: 0;
+    padding-right: 20px;
+
+    transform: translateY(-100%);
 
     color: $light-text;
     font-size: 18px;
@@ -140,11 +145,13 @@
         height: 300px;
 
         &.lavna {
-            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment1.jpg');
+            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
+                url('../images/investment/investment1.jpg');
         }
 
         &.sukhodol {
-            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%), url('../images/investment/investment2.jpg');
+            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
+                url('../images/investment/investment2.jpg');
         }
     }
 }
@@ -279,6 +286,8 @@
     .investment__item-title {
         position: static;
         margin-bottom: 20px;
+        
+        transform: none;
 
         color: $text-color;
         font-size: 30px;
