@@ -834,7 +834,7 @@ th {
   padding: 16px 22px;
   background-color: #eee; }
 
-.investment__item-title {
+.investment__item-header {
   position: absolute;
   top: -20px;
   margin: 0;
@@ -842,7 +842,10 @@ th {
   -webkit-transform: translateY(-100%);
      -moz-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+.investment__item-title {
+  margin: 0 0 5px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -850,6 +853,17 @@ th {
   .investment__item-title::-moz-selection {
     color: #ba3f1d; }
   .investment__item-title::selection {
+    color: #ba3f1d; }
+
+.investment__item-city {
+  margin: 0 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic; }
+  .investment__item-city::-moz-selection {
+    color: #ba3f1d; }
+  .investment__item-city::selection {
     color: #ba3f1d; }
 
 .investment__item-text {
@@ -990,17 +1004,22 @@ th {
     padding: 50px 40px; }
   .investment__item-image {
     width: 67%; }
-  .investment__item-title {
+  .investment__item-header {
     position: static;
     margin-bottom: 20px;
     -webkit-transform: none;
        -moz-transform: none;
         -ms-transform: none;
-            transform: none;
+            transform: none; }
+  .investment__item-title {
+    margin-bottom: 15px;
     color: #333;
     font-size: 30px;
     font-weight: 700;
     line-height: 40px; }
+  .investment__item-city {
+    font-size: 21px;
+    color: #333; }
   .investment__item-text {
     font-size: 16px;
     line-height: 30px; }
@@ -1388,6 +1407,8 @@ th {
     padding-top: 90px; }
   .services__heading {
     margin-bottom: 30px; }
+  .services__row {
+    margin-bottom: 45px; }
   .services__text {
     font-size: 24px;
     line-height: 32px; }

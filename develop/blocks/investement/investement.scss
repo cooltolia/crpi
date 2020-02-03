@@ -84,18 +84,33 @@
     background-color: #eee;
 }
 
-.investment__item-title {
+.investment__item-header {
     position: absolute;
     top: -20px;
     margin: 0;
     padding-right: 20px;
 
     transform: translateY(-100%);
+}
 
+.investment__item-title {
+    margin: 0 0 5px;
     color: $light-text;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+
+    &::selection {
+        color: $themecolor;
+    }
+}
+
+.investment__item-city {
+    margin: 0 0;
+    color: $light-text;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
 
     &::selection {
         color: $themecolor;
@@ -283,16 +298,24 @@
         width: 67%;
     }
 
-    .investment__item-title {
+    .investment__item-header {
         position: static;
         margin-bottom: 20px;
-        
         transform: none;
+    }
+
+    .investment__item-title {
+        margin-bottom: 15px;
 
         color: $text-color;
         font-size: 30px;
         font-weight: 700;
         line-height: 40px;
+    }
+
+    .investment__item-city {
+        font-size: 21px;
+        color: $text-color;
     }
 
     .investment__item-text {
