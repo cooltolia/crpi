@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
 
     function lazyLoadPictures(imagesContainers, opts = {}) {
         const options = {
-            rootMargin: opts.rootMargin || '0px 50% 100% 50%',
+            rootMargin: opts.rootMargin || '0px 50% 50% 50%',
             root: opts.root || null,
             threshold: opts.threshold || 0,
         };
