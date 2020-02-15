@@ -48,4 +48,7 @@
             lang === 'ru' ? _this.text('Скрыть') : _this.text('Hide');
         }
     });
+
+    var investmentPictures = document.querySelectorAll('.investment__item-image');
+    lazyLoadPictures(investmentPictures);
 })();

@@ -79,17 +79,19 @@
 .services__item-image {
     width: 100%;
     height: 225px;
-    background-size: cover;
 
-    &.lavna {
-        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
-            url('../images/investment/investment1_s.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+    img {
+        position: relative;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
     }
 
-    &.sukhodol {
-        background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
-            url('../images/investment/investment2_s.jpg');
-    }
 }
 
 .services__item-content {
@@ -185,16 +187,6 @@
 
     .services__item-image {
         height: 300px;
-
-        &.lavna {
-            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
-                url('../images/investment/investment1.jpg');
-        }
-
-        &.sukhodol {
-            background-image: linear-gradient(to bottom, rgba(black, 0.2) 0%, rgba(black, 0.2) 100%),
-                url('../images/investment/investment2.jpg');
-        }
     }
 }
 

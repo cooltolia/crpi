@@ -48,4 +48,7 @@
             lang === 'ru' ? _this.text('Скрыть') : _this.text('Hide');
         }
     });
+
+    var servicesPictures = document.querySelectorAll('.services__item-image, .services__image');
+    lazyLoadPictures(servicesPictures);
 })();

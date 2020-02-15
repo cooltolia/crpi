@@ -30,13 +30,13 @@ jQuery(document).ready(function($) {
                     phone: m(n, i) && !m(f, i),
                     ipod: m(t, i),
                     tablet: !m(n, i) && m(r, i) && !m(f, i),
-                    device: (m(n, i) || m(t, i) || m(r, i)) && !m(f, i)
+                    device: (m(n, i) || m(t, i) || m(r, i)) && !m(f, i),
                 },
                 amazon: { phone: m(b, i), tablet: !m(b, i) && m(l, i), device: m(b, i) || m(l, i) },
                 android: {
                     phone: (!m(f, i) && m(b, i)) || (!m(f, i) && m(a, i)),
                     tablet: !m(f, i) && !m(b, i) && !m(a, i) && (m(l, i) || m(p, i)),
-                    device: (!m(f, i) && (m(b, i) || m(l, i) || m(a, i) || m(p, i))) || m(/\bokhttp\b/i, i)
+                    device: (!m(f, i) && (m(b, i) || m(l, i) || m(a, i) || m(p, i))) || m(/\bokhttp\b/i, i),
                 },
                 windows: { phone: m(f, i), tablet: m(s, i), device: m(f, i) || m(s, i) },
                 other: {
@@ -45,8 +45,8 @@ jQuery(document).ready(function($) {
                     opera: m(h, i),
                     firefox: m(w, i),
                     chrome: m(v, i),
-                    device: m(u, i) || m(c, i) || m(h, i) || m(w, i) || m(v, i)
-                }
+                    device: m(u, i) || m(c, i) || m(h, i) || m(w, i) || m(v, i),
+                },
             };
             return (
                 (d.any = d.apple.device || d.android.device || d.windows.device || d.other.device),
@@ -75,6 +75,82 @@ jQuery(document).ready(function($) {
         },
         false
     );
+
+    function lazyLoadPictures(imagesContainers, opts = {}) {
+        const options = {
+            rootMargin: opts.rootMargin || '0px 50% 100% 50%',
+            root: opts.root || null,
+            threshold: opts.threshold || 0,
+        };
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const imageContainer = entry.target;
+                            const image = imageContainer.querySelectorAll('img, source');
+
+                            image.forEach(img => {
+                                if (img.dataset && img.dataset.src) {
+                                    img.src = img.dataset.src;
+                                }
+
+                                if (img.dataset && img.dataset.srcset) {
+                                    img.srcset = img.dataset.srcset;
+                                }
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { rootMargin: options.rootMargin, root: options.root, threshold: options.threshold }
+            );
+
+            imagesContainers.forEach(container => observer.observe(container));
+        } else {
+            imagesContainers.forEach(container => {
+                const image = container.querySelector('img');
+                const source = container.querySelector('source');
+
+                image.src = source.dataset.srcset;
+            });
+        }
+    }
+
+    function lazyLoadImages(imagesNodes, opts = {}) {
+        const options = {
+            rootMargin: opts.rootMargin || '0px 0px 100% 0px',
+            root: opts.root || null,
+            threshold: opts.threshold || 0,
+        };
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const image = entry.target;
+                            const src = image.getAttribute('data-src');
+                            if (!src) return;
+                            image.src = src;
+
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { rootMargin: options.rootMargin, root: options.root, threshold: options.threshold }
+            );
+
+            imagesNodes.forEach(image => observer.observe(image));
+        } else {
+            imagesNodes.forEach(image => {
+                const src = image.getAttribute('data-src');
+                if (!src) return;
+                image.src = src;
+            });
+        }
+    }
 
     //=require ../blocks/**/*.js
 });
