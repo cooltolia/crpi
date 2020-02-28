@@ -4,18 +4,32 @@ mixin investment-en()
             +e.heading 
                 +heading('Investments')
             +e.content
-                +e.P.text Port Infrastructure Development Center, JSC acts as a private investor into infrastructural transport and logistic projects, being actively involved into their development.
-                +e.P.text As of today the company’s investment portfolio comprises several projects, among which are Sukhodol specialized coal transshipment sea port and Lavna coal terminal of the trading sea port.
+                +e.P.text Port Infrastructure Development Center invests into infrastructural, transport and logistic projects and production companies and takes an active part in their development along with its partners. The investment portfolio of the PIDC consists of such major projects as specialized coal transshipment sea port Sukhodol, coal terminal of commercial sea port Lavna and Altaivagon production holding.
         +e.UL.list
             +e.LI.item
-                +e.item-image.lavna
+                +e.item-image
+                    +picture-helper({mobile: "images/investment/investment2_mobile.jpg", tablet: "images/investment/investment2_tablet.jpg", desktop: "images/investment/investment2.jpg"}, true)
                 +e.item-content
-                    +e.item-title Lavna
-                    +e.P.item-text The Company became a shareholder with 30% share in May 2019.<span class='more'> The project is developing on the terms of governmental and private partnership, the basic documents were signed in June 2019. The launching of the port’s operation is planned for 2021. The terminal will enable to transship up to 18 mln. tons of coal annually.</span>
+                    +e.item-header
+                        +e.item-title Sukhodol
+                        +e.item-city Vladivostok
+                    +e.P.item-text Sukhodol commercial sea port is a resident of Vladivostok free port<span class='more'>, a new high-tech coal terminal which launch is scheduled for 2021. It will enable the coal transshipment in amount up to 12 million tons per year, which will create an opportunity for a sufficient expansion of Russian coal mining companies’ export to Asia-Pacific countries.</span>
                     +e.A.more-link(href='#') More
             +e.LI.item
-                +e.item-image.sukhodol
+                +e.item-image
+                    +picture-helper({mobile: "images/investment/investment1_mobile.jpg", tablet: "images/investment/investment1_tablet.jpg", desktop: "images/investment/investment1.jpg"}, true)
                 +e.item-content
-                    +e.item-title Sukhodol
-                    +e.P.item-text The Company purchased a share in the port’s share capital in December 2018. <span class='more'>Presently, the construction works are being done and their accomplishment and commissioning of the port is scheduled for the end of 2021. Upon accomplishment of construction the port will enable to transship the coal in the volume up to 20 mln. tons per annum.<span>
+                    +e.item-header
+                        +e.item-title Lavna
+                        +e.item-city Murmansk
+                    +e.P.item-text It is a apecialized coal transshipment complex on the Western shore of the Kola Bay at the mouth of the Lavna river. <span class='more'>This is a strategically important federal project developing on the basis of public and private partnership. It is planned to launch a modern high-tech deep-water port Lavna in 2021. The port's production capacity is meant for the transshipment of 18 million tons of coal per year.</span>
+                    +e.A.more-link(href='#') More
+            +e.LI.item
+                +e.item-image
+                    +picture-helper({mobile: "images/investment/investment3_mobile.jpg", tablet: "images/investment/investment3_tablet.jpg", desktop: "images/investment/investment3.jpg"}, true)
+                +e.item-content
+                    +e.item-header
+                        +e.item-title Altaivagon
+                        +e.item-city Novoaltaisk
+                    +e.P.item-text Altaivagon production holding is one of the largest Russian manufacturers of railway freight rolling stock. <span class='more'>The company is engaged in production of modern covered cars, gondola cars, platforms and tanks, and in development and manufacture of innovative models of railway freight rolling stock for the major railway operators.</span>
                     +e.A.more-link(href='#') More

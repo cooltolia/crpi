@@ -3,26 +3,41 @@ mixin services-en()
         +inner
             +e.row
                 +e.content
-                    +e.heading 
-                        +heading('Services')
-                    +e.P.text Port Infrastructure Development Center, JSC provides the complex of transport and forwarding services with a major in railway transportation of loose cargo and organizing of port transshipment. The company has at its disposal a wide network of partnership relations with ports and biggest freight cars owners that allows coping with transport challenges of any complexity and in any volume.
+                    //- +e.heading 
+                    //-     +heading('Services')
+                    +e.P.text Port Infrastructure Development Center (PIDC), Joint-Stock Company, is an investment, transport and logistic company that operates on the territory of Russian Federation. It is a partner of major rolling stock operators and proprietors, Federal industrial enterprises and financial and industrial groups.
                 +e.image
-                    img(src="images/services/service.jpg", alt="CRPI services")
+                    +picture-helper({mobile: "images/services/service_mobile.jpg", tablet: "images/services/service_tablet.jpg", desktop: "images/services/service.jpg"}, true)
         +inner
             +e.heading.__list-heading
-                +heading('Services list', 'center')
+                +heading('Services', 'center')
             +e.P.text
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel necessitatibus repudiandae cupiditate nemo nihil, numquam reprehenderit, quam enim provident nisi maxime suscipit rem fuga est voluptatem. Nihil officiis consequatur quidem.
+                | PIDC provides comprehensive freight forwarding services for railway transportation and port transshipment of all types of cargo. The company has established a wide network of partnership relations with cargo ports and major rolling stock operators, which enables it to solve transport issues of any complexity and on any scale.
         +e.UL.list
             +e.LI.item
-                +e.item-image.lavna
+                +e.item-image
+                    +picture-helper({mobile: "images/services/service1_mobile.jpg", tablet: "images/services/service1_tablet.jpg", desktop: "images/services/service1.jpg"}, true)
                 +e.item-content
-                    +e.item-title Lavna
-                    +e.P.item-text The Company became a shareholder with 30% share in May 2019.<span class='more'> The project is developing on the terms of governmental and private partnership, the basic documents were signed in June 2019. The launching of the port’s operation is planned for 2021. The terminal will enable to transship up to 18 mln. tons of coal annually.</span>
+                    +e.item-title Transportation rolling stock provision
+                    +e.P.item-text PIDC provides its customers with rail transportation of all cargo stock item groups <span class='more'> within the territory of the Russian Federation, the CIS, the Baltic States and Ukraine. Transportation is carried out by covered cars, gondola cars, tanks and platforms.</span>
                     +e.A.more-link(href='#') More
             +e.LI.item
-                +e.item-image.sukhodol
+                +e.item-image
+                    +picture-helper({mobile: "images/services/service2_mobile.jpg", tablet: "images/services/service2_tablet.jpg", desktop: "images/services/service2.jpg"}, true)
                 +e.item-content
-                    +e.item-title Sukhodol
-                    +e.P.item-text The Company purchased a share in the port’s share capital in December 2018. <span class='more'>Presently, the construction works are being done and their accomplishment and commissioning of the port is scheduled for the end of 2021. Upon accomplishment of construction the port will enable to transship the coal in the volume up to 20 mln. tons per annum.<span>
+                    +e.item-title Railway forwarding services
+                    +e.P.item-text КThe PIDC provides a full range of forwarding services on transportation of goods<span class='more'>, including proceeding carriage payments within the entire territory of the Russian railways coverage, as well as in Central Asia states and Baltic countries.</span>
+                    +e.A.more-link(href='#') More
+            +e.LI.item
+                +e.item-image
+                    +picture-helper({mobile: "images/services/service3_mobile.jpg", tablet: "images/services/service3_tablet.jpg", desktop: "images/services/service3.jpg"}, true)
+                +e.item-content
+                    +e.item-title Rolling Stock rental
+                    +e.P.item-text We provide all types of the rolling stock for long-term and short-term rental in any scope.
+            +e.LI.item
+                +e.item-image
+                    +picture-helper({mobile: "images/services/service4_mobile.jpg", tablet: "images/services/service4_tablet.jpg", desktop: "images/services/service4.jpg"}, true)
+                +e.item-content
+                    +e.item-title Spare parts and cars parts components delivery
+                    +e.P.item-text PIDC has direct contracts with major manufacturers and supplies cast car parts<span class='more'>, running gears elements, solid wheels, axles, box units and complete wheelsets on SONK (old axle-new wheel) and NONK (new axle-new wheel) basis on РУ1Ш axles.</span>
                     +e.A.more-link(href='#') More
