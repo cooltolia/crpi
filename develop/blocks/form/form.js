@@ -88,24 +88,38 @@
 
         if (isValidEmail() && isValidName() && isValidComment()) {
             errors.hide();
-            var body =
-                'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();
+
+            var formData = $(this).serialize();
+            // var body =
+            //     'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();
 
             emailInput.val('');
             nameInput.val('');
             commentInput.val('');
 
-            Email.send({
-                SecureToken: '189816d4-5060-4120-ab59-10bc81d7ee1e',
-                To: 'abd.oybek@gmail.com',
-                From: 'abd.oybek@gmail.com',
-                Subject: 'Заявка с сайта ЦРПИ',
-                Body: body
-            }).then(function(e) {
-                console.log(e);
+            $.ajax({
+                url: 'mail.php',
+                type: 'POST',
+                data: formData,
+                success: function(data) {
+                    var response = (function(raw) {
+                        try {
+                            return JSON.parse(raw);
+                        } catch (err) {
+                            return false;
+                        }
+                    })(data);
 
-                success.fadeIn(300).addClass('active');
+                    if (response.success) {
+                        success.fadeIn(300).addClass('active');
+                    }
+
+                },
+                error: function(data) {
+                    debugger;
+                },
             });
+
         }
     });
 

@@ -341,9 +341,13 @@ jQuery(document).ready(function($) {
 
                 errors.hide();
 
-                var body =
+    
 
-                    'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();
+                var formData = $(this).serialize();
+
+                // var body =
+
+                //     'Имя: ' + nameInput.val() + '; E-mail: ' + emailInput.val() + '; Комментарий: ' + commentInput.val();
 
     
 
@@ -355,27 +359,51 @@ jQuery(document).ready(function($) {
 
     
 
-                Email.send({
+                $.ajax({
 
-                    SecureToken: '189816d4-5060-4120-ab59-10bc81d7ee1e',
+                    url: 'mail.php',
 
-                    To: 'abd.oybek@gmail.com',
+                    type: 'POST',
 
-                    From: 'abd.oybek@gmail.com',
+                    data: formData,
 
-                    Subject: 'Заявка с сайта ЦРПИ',
+                    success: function(data) {
 
-                    Body: body
+                        var response = (function(raw) {
 
-                }).then(function(e) {
+                            try {
 
-                    console.log(e);
+                                return JSON.parse(raw);
+
+                            } catch (err) {
+
+                                return false;
+
+                            }
+
+                        })(data);
 
     
 
-                    success.fadeIn(300).addClass('active');
+                        if (response.success) {
+
+                            success.fadeIn(300).addClass('active');
+
+                        }
+
+    
+
+                    },
+
+                    error: function(data) {
+
+                        debugger;
+
+                    },
 
                 });
+
+    
 
             }
 
