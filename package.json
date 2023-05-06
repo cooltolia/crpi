@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "browser-sync": "^2.18.5",
+        "browser-sync": "^2.29.1",
         "del": "^2.2.2",
         "fs-extra": "^1.0.0",
         "ftp-deploy": "^2.3.3",
